@@ -1,0 +1,26 @@
+.section8 {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 80px 0;
+}
+
+tr {
+	height: 40px;
+}
+
+#submitBtn {
+	background: #b24444;
+	color: #f6dbdb;
+	margin: 0 170px 0 50px;
+}
+.form1 {
+	box-sizing: border-box;
+	padding-left: 100px;
+}
+
+.error{
+	color: red;
+}
+.swiper-pagination {
+    position: inherit !important;
+    }
