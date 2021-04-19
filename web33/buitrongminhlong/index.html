@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamless</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <button id="toTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-custom fixed-top">
+        <a class="navbar-brand navbar-brand-custom" href="#">
+            <img src="images/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a class="nav-link nav-link-custom active-custom" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#new-bands">Bands</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#genres">Genres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#news">News</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Tour</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 search-btn-custom" type="submit">
+                    <i class="fa fa-search fa-search-custom" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/Saor.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/emptiness.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/culted.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container-custom">
+        <center>
+            <div class="title wow swing">ABOUT US</div>
+            <hr>
+            <div class="description wow bounce">
+                We are a record label from Hanoi, Vietnam with a main focus on black metal and gothic music.
+            </div>
+            <div class="slogan">Dream, dream, dream
+                Dream of the night</div>
+            <img src="images/Emperor.jpg" alt="" class="wow tada">
+        </center>
+        </div>
+    </div>
+
+    <div class="new-bands" id="new-bands">
+        <div class="container">
+            <center>
+            <div class="title wow wobble">NEW BAND SIGNINGS</div>
+            <hr>
+            <div class="description wow bounce">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eveniet tempora cum culpa sint rem?
+            </div>
+            </center>
+            <br>
+            <div class="row">
+                <div class="new-bands-card col-lg-4 col-md-12 col-sm-12">
+                    <center>
+                    <img src="images/summoning.jpg" alt="" class="wow fadeInLeft">
+                    <div class="title wow fadeInDownBig">Summoning</div>
+                    <p class="description wow fadeInDownBig">Summoning is an Austrian black metal band based in Vienna, Austria. 
+                        Since their formation in 1993 they have released eight albums and two EPs on Napalm Records.</p>
+                    </center>
+                </div>
+
+                <div class="new-bands-card col-lg-4 col-md-12 col-sm-12">
+                    <center>
+                    <img src="images/myspyrming.jpg" alt="" class="wow fadeInDown">
+                    <div class="title wow fadeInDownBig">Myspyrming</div>
+                    <p class="description wow fadeInDownBig">Misþyrming (Icelandic pronunciation: ​[ˈmɪːsˌθɪrmiŋk]) are a black metal band from Reykjavík, Iceland. 
+                        The band formed in June 2013 and are currently signed to Dreamless Records.</p>
+                    
+                    </center>
+                </div>
+
+                <div class="new-bands-card col-lg-4 col-md-12 col-sm-12">
+                    <center>
+                    <img src="images/mgla.jpg" alt="" class="wow fadeInRight">
+                        <div class="title wow fadeInDownBig">Mgla</div>
+                        <p class="description wow fadeInDownBig">Initially founded as a studio project by singer and multi-instrumentalist M.. 
+                            After the release of With Hearts Toward None in 2012, Mgła started to play live shows employing guest musicians.
+                        </p>
+                    
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="achievements">
+        <div class="container">
+            <!-- <img src="images/studio.jpg" alt=""> -->
+            <div class="row">
+                <div class="acv1 col-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="num">124</div>
+                    <div class="text wow bounceInUp">BANDS SIGNED</div>
+                </div>
+
+                <div class="acv1 col-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="num">572</div>
+                    <div class="text wow bounceInUp">ALBUMS RELEASED</div>
+                </div>
+
+                <div class="acv1 col-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="num">1893</div>
+                    <div class="text wow bounceInUp">EMPLOYEES</div>
+                </div>
+
+                <div class="acv1 col-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="num">124</div>
+                    <div class="text wow bounceInUp">BANDS SIGNED</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="genres" id="genres">
+        <div class="container-custom">
+            <center>
+                <div class="title wow swing">GENRES</div>
+                <hr>
+                <div class="row">
+                    <div class="genre wow bounce col active-custom" id="all" data-filter="*">
+                        All
+                    </div>
+                    <div class="genre wow bounce col" id="black-metal" data-filter=".black-metal">
+                        Black metal
+                    </div>
+                    <div class="genre wow bounce col" id="post-punk" data-filter=".post-punk">
+                        Post-punk
+                    </div>
+                    <div class="genre wow bounce col" id="death-metal" data-filter=".death-metal">
+                        Death metal
+                    </div>
+                    <div class="genre wow bounce col" id="prog" data-filter=".prog">
+                        Progessive
+                    </div>
+                    <div class="genre wow bounce col" id="synthwave" data-filter=".synthwave">
+                        Synthwave
+                    </div>
+                </div>
+                
+            </center>
+        </div>
+        <div class="genre-img">
+            <div class="row">
+                <div class="music-item death-metal wow fadeInLeftBig col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                    <img src="images/opeth.jpg" alt="">
+                </div>
+                <div class="music-item prog wow fadeInLeftBig col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                    <img src="images/soen.jpg" alt="">
+                </div>
+                <div class="music-item black-metal wow fadeInRightBig col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                    <img src="images/mgla.jpg" alt="">
+                </div>
+                <div class="music-item black-metal wow fadeInRightBig col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                    <img src="images/myspyrming.jpg" alt="">
+                </div>
+                <div class="music-item synthwave wow fadeInLeftBig col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                    <img src="images/pertubator.jpg" alt="">
+                </div>
+                <div class="music-item death-metal wow fadeInLeftBig col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                    <img src="images/death.jpg" alt="">
+                </div>
+                <div class="music-item post-punk wow fadeInRightBig col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                    <img src="images/THe-Cure-Blondie.jpg" alt="">
+                </div>
+                <div class="music-item prog wow fadeInRightBig col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                    <img src="images/igorrr.jpg" alt="">
+                </div>
+                <div class="music-item post-punk wow fadeInRightBig col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                    <img src="images/molchat-doma.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news" id="news">
+        <div class="container">
+            <center>
+                <div class="title wow swing">NEWS</div>
+                <hr>
+                <div class="description wow bounce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque iusto eos beatae fugiat, magni autem laborum quam assumenda dignissimos voluptatum, a quibusdam tenetur atque?
+                </div>
+            </center>
+
+            <div class="news-content">
+                
+                <div class="big-news wow fadeInLeftBig">
+                    <img src="images/fenriz2.jpg" alt="">
+                    <div class="tags">Interview</div>
+                    <div class="news-title">Made of Music: An Interview With Gylve 'Fenriz' Nagell of Darkthrone</div>
+                    <div class="preview">"I am more a preservationist perhaps, JUST MAKING METAL"</div>
+                    <span class="author">Minh Long Bùi</span>
+                    <span class="time"><i class="fa fa-clock-o" aria-hidden="true"></i> 11 hours ago</span>
+                </div>
+
+                <div class="clear">
+                    <div class="small-news">
+                        <center>
+                            <img src="images/Mikael-Akerfeldt-Opeth.jpg" alt="">
+                    
+                            <div class="small-tags">Opeth livecast</div>
+                            <div class="small-title">Opeth live at fest</div>
+                            <span class="small-author">Minh Long Bùi</span>
+                            <span class="small-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 11 hours ago</span>
+                    
+                        </center>
+                    </div>
+
+                    <div class="small-news">
+                        <center>
+                            <img src="images/myspyrming.jpg" alt="">
+                            <div class="small-tags">Myspyrming new album</div>
+                            <div class="small-title">Iceland's finest</div>
+                            <span class="small-author">Minh Long Bùi</span>
+                            <span class="small-time"><i class="fa fa-clock-o" aria-hidden="true"></i> 11 hours ago</span>
+                        </center>
+                    </div>
+                </div>
+
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="offer">
+        <div class="container">
+            <center>
+                <div class="title wow swing">What we offer</div>
+                <hr>
+                <!-- <div class="description wow bounce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque iusto eos beatae fugiat, magni autem laborum quam assumenda dignissimos voluptatum, a quibusdam tenetur atque?
+                </div> -->
+            </center>
+
+            <div class="offer-content">
+                <div class="clear">
+                    <div class="offers">
+                        <div class="clear">
+                            <div class="offer-card wow bounceInLeft">
+                                <div class="clear">
+                                    <div class="logo"><i class="fa fa-microphone fa-2x" aria-hidden="true"></i></div>
+                                    <div class="content">
+                                        <div class="title">Recording</div>
+                                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi repellendus. Repellat necessitatibus reiciendis pariatur vero modi soluta ex adipisci?</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="offer-card wow bounceInRight">
+                                <div class="clear">
+                                    <div class="logo"><i class="fa fa-ravelry fa-2x" aria-hidden="true"></i></div>
+                                    <div class="content">
+                                        <div class="title">Distributing</div>
+                                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi repellendus. Repellat necessitatibus reiciendis pariatur vero modi soluta ex adipisci?</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="offer-card wow bounceInLeft">
+                                <div class="clear">
+                                    <div class="logo"><i class="fa fa-sign-language fa-2x" aria-hidden="true"></i></div>
+                                    <div class="content">
+                                        <div class="title">Organizing</div>
+                                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi repellendus. Repellat necessitatibus reiciendis pariatur vero modi soluta ex adipisci?</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="offer-card wow bounceInRight">
+                                <div class="clear">
+                                    <div class="logo"><i class="fa fa-music fa-2x" aria-hidden="true"></i></div>
+                                    <div class="content">
+                                        <div class="title">Recording</div>
+                                        <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi repellendus. Repellat necessitatibus reiciendis pariatur vero modi soluta ex adipisci?</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offer-img wow rotateInUpRight">
+                        <img src="images/steven-wilson-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="clear">
+                    <div class="text wow swing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, a!</div>
+                    <button>Get A Quote</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- <div class="others-say">
+        <div class="container">
+            <center>
+                <div class="title wow swing">What others say about us</div>
+                <hr>
+                <div class="description wow bounce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque iusto eos beatae fugiat
+                </div>
+            </center>
+        </div>
+    </div> -->
+
+    <div class="why-us">
+        <div class="row">
+            <div class="image col-lg-6 col-md-12 col-sm-12">
+                <img src="images/imperial_triumphant_-_24051.jpg" alt="">
+            </div>
+            
+            <div class="accordion col-lg-6  col-md-12 col-sm-12" id="accordionExample">
+                <div class="title wow swing">Why choose us</div>
+                <hr>
+
+                <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Employees have many years of experience
+                    </button>
+                    </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        We pay bands a reasonable amount.
+                    </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Top notch recording studio.
+                    </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Amazing distribution system
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team">
+        <div class="container">
+            <center>
+                <div class="title wow swing">Our team</div>
+                <hr>
+                <div class="description wow bounce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque iusto eos beatae fugiat
+                </div>
+            </center>
+
+            <div class="human-resrc">
+                <center>
+                    <div class="clear">
+                        <div class="team-card wow fadeInDownBig">
+                            <img src="images/rogdan.jpg" alt="">
+                            <div class="media">
+                                <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+                                <i class="fa fa-bandcamp fa-3x" aria-hidden="true"></i>
+                            </div>
+                            <center>
+                                <p class="name">Rogdan</p>
+                                <p class="discription">Frontman of Elcrost</p>
+                            </center>
+                        </div>
+
+                        <div class="team-card wow fadeInLeftBig">
+                            <img src="images/Imperial.jpg" alt="">
+                            <div class="media">
+                                <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+                                <i class="fa fa-bandcamp fa-3x" aria-hidden="true"></i>
+                            </div>
+                            <center>
+                                <p class="name">Imperial</p>
+                                <p class="discription">Label Manager</p>
+                            </center>
+                        </div>
+
+                        <div class="team-card wow fadeInDownBig">
+                            <img src="images/lunar.jpg" alt="">
+                            <div class="media">
+                                <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+                                <i class="fa fa-bandcamp fa-3x" aria-hidden="true"></i>
+                            </div>
+                            <center>
+                                <p class="name">Lunar Haze</p>
+                                <p class="discription">Producer, Songwriter</p>
+                            </center>
+                        </div>
+
+                        <div class="team-card wow fadeInLeftBig">
+                            <img src="images/HoangVu.jpg" alt="">
+                            <div class="media">
+                                <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                            </div>
+                            <center>
+                                <p class="name">Hoang Vu</p>
+                                <p class="discription">Label Businessman</p>
+                            </center>
+                        </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="map">
+        <div class="container">
+            <center>
+                <h1>THE LABEL</h1>
+                <hr>
+            </center>
+            <div class="text">
+                Originally founded in France and now represented worldwide, Season of Mist has gained the reputation for being an innovative, wide spectrum metal label, interested in exploring and developing new artists and bands. The metal label represents world class metal acts, but also leads the hordes towards new creative horizons and remains true to the underground via the sub label Season of Mist Underground Activists. Variety is the spice of life
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <center>
+                <div class="title wow swing">Contact Us</div>
+                <hr>
+                <div class="description wow bounce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque iusto eos beatae fugiat
+                </div>
+            </center>
+
+            <div class="info">
+                <p style="font-size: larger; font-weight: bold; margin-top: 2%;">Address</p>
+                <span>68 Muholland Drive</span>
+                <p>US</p>
+
+                <p style="font-size: larger; font-weight: bold;">Phone number</p>
+                <span>092648662</span>
+                
+                <p style="font-size: larger; font-weight: bold; margin-top: 2%;">Email Address</p>
+                <span>longbtm@zent.vn</span>
+                
+            </div>
+
+            <form action="">
+                <div class="clear">
+                    <div class="credentials">
+                        <input type="text" name="" id="name" placeholder="Name" height="40">
+                        <p id="empty-name" class="warning hide">Tên không được để trống</p>
+                        <input type="email" placeholder="Email" id="email">
+                        <p id="empty-email" class="warning hide">Email không được để trống</p>
+                        <p id="invalid-email" class="warning hide">Email sai cú pháp</p>
+                        <input type="text" placeholder="Subject" id="subject">
+                        <input type="button" value="Send Message" id="send-btn">
+                    </div>
+
+                    <div class="message">
+                        <textarea name="" id="message" cols="" rows="10" placeholder="Message"></textarea>
+                        <p id="empty-message" class="warning hide">Mess không được để trống</p>
+                    </div>
+                </form>
+            </form>
+        </div>
+    </div>
+
+    <div class="web">
+        <div class="container">
+            <div class="row">
+                <div class="web-image col-lg-3 col-sm-12 col-md-4">
+                    <img src="images/wordpress.png" alt="">
+                </div>
+                <div class="web-image col-lg-3 col-sm-12 col-md-4">
+                    <img src="images/wordpress.png" alt="">
+                </div>
+                <div class="web-image col-lg-3 col-sm-12 col-md-4">
+                    <img src="images/wordpress.png" alt="">
+                </div>
+                <div class="web-image col-lg-3 col-sm-12 col-md-4">
+                    <img src="images/wordpress.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <center>
+            <i class="fa fa-facebook fa-2x fa-cog" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-2x fa-cog" aria-hidden="true"></i>
+            <i class="fa fa-bandcamp fa-2x fa-cog" aria-hidden="true"></i>
+            <i class="fa fa-bank fa-2x fa-cog" aria-hidden="true"></i>
+            <i class="fa fa-hourglass fa-2x fa-cog" aria-hidden="true"></i>
+            <i class="fa fa-github fa-2x fa-cog" aria-hidden="true"></i>
+            <br>
+            <img src="images/logo.png" alt="">
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, quidem? In error id quae minus. Ad soluta quibusdam sed, at eveniet minus necessitatibus quam quis sint nihil cupiditate ipsa amet?</p>
+        </center>
+    </div>
+      
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/desktop-scroll.js"></script>
+    <script src="js/isotop-min.js"></script>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>

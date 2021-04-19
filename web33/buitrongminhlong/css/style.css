@@ -1,0 +1,652 @@
+img:hover{
+    cursor: pointer;
+}
+.clear::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+#toTop{
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #9695c5eb;
+}
+
+.active{
+    color: white;
+}
+.nav-link-custom{
+    color: rgba(255,255,255,.5) !important;
+}
+.nav-link-custom:hover{
+    color: rgba(255,255,255,1) !important;
+}
+.navbar-brand-custom{
+    width: 40% !important;
+    height: 70px;
+}
+.navbar-brand-custom img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.bg-custom{
+    background-color: black !important;
+}
+.navbar-toggler{
+    background-color: none !important;
+}
+.search-btn-custom{
+    border: white 1px solid !important;
+}
+.btn-outline-success {
+    color: white;
+}
+
+.carousel{
+    margin-top: 6%;
+}
+.carousel-item img{
+    height: 70%;
+}
+.carousel-inner{
+    max-height: 500px;
+}
+
+
+
+.new-bands{
+    margin-top: 5%;
+    /* background-image: url(../images/pagan.jpg); */
+}
+.title{
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+ hr{
+    width: 5%;
+    background-color: #47557e;
+    height: 2%;
+}
+.new-bands-card{
+    overflow: hidden;
+    padding-right: 1%;
+    /* position: relative; */
+}
+
+.new-bands-card img{
+    width: 100%;
+}
+.new-bands-card img:hover + .text{
+    top: 25%;
+    background-color: rgba(255,255,255, 0.6);
+}
+
+.new-bands-card .title{
+    font-size: 150%;
+}
+.new-bands-card .title:hover{
+    color: tomato;
+}
+
+
+.about{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url(../images/gothic.jpg);
+    background-attachment: fixed;
+}
+    .about .title, .about .description{
+        color: white;
+    }
+    .about .title{
+        font-family: 'Monoton', cursive;
+    }
+    .about .slogan{
+        font-family: 'Parisienne', cursive;
+        margin-top: 2%;
+        color: white;
+        font-size: 180%;
+    }
+.container-custom{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.about img{
+    margin-top: 5%;
+    width: 110%;
+}
+
+.achievements{
+    background-image: url(../images/gothic.jpg);
+    background-attachment: fixed;
+    padding: 2% 0%;
+    /* padding-bottom: 0%; */
+}
+.achievements .acv1{
+    /* position: relative; */
+    text-align: center;
+}
+    .acv1 .text{
+        color: white;
+        padding-bottom: 5%;
+    }
+    .acv1 .num{
+        font-size: 200%;
+        color: #47557e;
+    }
+
+.genres{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url(../images/gothicSilver.jpg);
+    background-attachment: fixed;
+}
+    .genre-img{
+        padding-top: 5%;
+    }
+    .genres .genre:hover{
+        color: #47557e;
+        cursor: pointer;
+        
+    }
+    .genre-img img:hover{
+        /* box-shadow: 5px 5px royalblue; */
+        border: 1px solid blue;
+    }
+    .genre-img img{
+        width: 100%;
+        /* height: 50%; */
+    }
+    .active-custom{
+        color: royalblue;
+    }
+    .genre{
+        font-weight: bold;
+    }
+
+
+
+.news{
+    background-attachment: fixed;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url(../images/gothic.jpg);
+}
+    .news-content{
+        padding-right: 5%;
+    }
+    .news-content hr{
+        width: 25%;
+    }
+    .news .title, .news .description{
+        color: white;
+    }
+    .news .title{
+        font-family: 'Monoton', cursive;
+    }
+
+    .big-news, .small-news{
+        position: relative;
+        margin: 0 auto;
+        padding: 5%;
+        padding-right: 0;
+    }
+    .big-news img{
+        max-width: 100%;
+    }
+    .tags{
+        position: absolute;
+        color: white;
+        padding: 0 10px;
+        background-color: red;
+        width: 70px;
+        bottom: 200px;
+        left: 6%;
+        font-size: 80%;
+    }
+    .news-title{
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        bottom: 150px;
+        left: 6%;
+    }
+    .news-title:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .preview, .author, .time{
+        position: absolute;
+        color: white;
+        /* font-weight: bold; */
+        font-size: 15px;
+        bottom: 120px;
+        left: 6%;
+    }
+    .author{
+        bottom: 90px;
+        color: silver;
+    }
+    .author:hover{
+        color: white;
+        cursor: pointer;
+    }
+    .time{
+        bottom: 60px;
+    }
+
+    .small-news{
+        /* position: absolute; */
+        float: left;
+        width: 45%;
+        background-color: white;
+        padding: 0;
+        margin-left: 5%;
+        padding-bottom: 2%;
+    }
+
+    .small-news div, .small-news span{
+        padding: 0 2%;
+    }
+    .small-news div:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .small-news img{
+        width: 100%;
+    }
+    .small-tags{
+        color: red;
+    }
+    .small-title{
+        color: black;
+        font-size: larger;
+        font-weight: bold;
+    }
+    /* .card{
+        border: 1px solid black;
+        margin-top: 3%;
+    }
+    .card-text-custom{
+        display: none;
+    }
+    .card img{
+        width: 100%;
+    }
+    .card-title:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: #47557e;
+    } */
+.offer{
+    background-image: url(../images/lines2.png);
+    background-attachment: fixed;
+    
+}
+.offers{
+    width: 60%;
+    float: left;
+}
+.offers .title:hover{
+    color: #47557e;
+    cursor: pointer;
+}
+.offer-img{
+    width: 40%;
+    float: left;
+}
+.offer-card{
+    float: left;
+    width: 50%;
+    margin-top: 2%;
+}
+    .offer-card .logo, .offer-card .content{
+        float: left;
+    }
+    .offer-card .logo{
+        width:20%;
+        /* height: 50px; */
+        border-radius: 50%;
+        background-color: cornflowerblue;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .offer-card .content{
+        width: 70%;
+        margin-left: 5%;
+    }
+    .offer-card .title{
+        font-size: 140%;
+    }
+
+    .offer footer{
+        background-color: cornflowerblue;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        /* margin-top: 2%; */
+    }
+    .offer footer button{
+        float: right;
+        border: none;
+    }
+    .offer footer .text{
+        float: left;
+        color: white;
+    }
+
+.why-us{
+    background-image: url(../images/gothicSilver.jpg);
+    background-attachment: fixed;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+    .accordion{
+        margin-top: 2%;
+    }
+    .accordion .card{
+        margin-top: 0%;
+        border: none;
+    }
+    .why-us .image img{
+        width: 100%;
+    }
+    .why-us hr{
+        height: 2px;
+        margin-left: 0;
+    }
+    .why-us .card-header:hover{
+        background-color: #47557e;
+    }
+    .why-us .card-header:hover .btn-link{
+        color: white;
+    }
+    .why-us .card-body{
+        background-color: #8080806b;
+    }
+    .why-us .btn-link{
+        color: black;
+        font-weight: bold;
+    }
+
+
+.team{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url(../images/lines2.png);
+    background-attachment: fixed;
+}
+    .human-resrc{
+        padding-top: 2%;
+    }
+    .team-card{
+        width: 22%;
+        background-color: #d3cccc6b;
+        margin-right: 2%;
+        float: left;
+        background-clip: content-box;
+        position: relative;
+    }
+    .team-card img{
+        max-width: 100%;
+    }
+    .team-card .name{
+        font-weight: bold;
+    }
+    .team-card .name:hover{
+        color: cornflowerblue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .team-card .media{
+        /* align-items: center; */
+        display: none;
+    }
+    .team-card .media i{
+        padding-right: 15%;
+    }
+    .team-card:hover .media{
+        display: block;
+        background-color: rgba(255,255,255, 0.4);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 50%;
+        padding-left: 20%;
+    }
+
+
+.map{
+    background-image: url(../images/gothic.jpg);
+    background-attachment: fixed;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+/* .map img{
+    width: 100%;
+    max-height: 100%;
+    opacity: 0.8;
+} */
+
+.contact{
+    padding-top: 5%;
+    background-image: url(../images/lines2.png);
+}
+    .credentials, .message, .info{
+        float: left;
+        width: 32%;
+        padding-right: 5%;
+        margin-top: 5%;
+    }
+    .credentials input{
+        width: 100%;
+        margin-bottom: 5%;
+        border: gray 1px solid;
+        /* height: 10%; */
+    }
+    .message input{
+        width: 100%;
+        height: 100%;
+        border: gray 1px solid;
+    }
+
+
+form .warning{
+    color: red;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+    #send-btn{
+        border: none;
+        background-color: cornflowerblue;
+        color: white;
+    }
+
+
+.web{
+    background-color: #d3cccc36;
+    margin-top: 5%;
+}
+    .web-image img{
+        max-width: 100%;
+    }
+
+
+.foot{
+    padding-top: 5%;
+    background: black;
+    padding-bottom: 5%;
+}
+.foot i{
+    margin-right: 2%;
+    border: 1px white solid;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    padding-top: 1%;
+    /* padding: auto; */
+}
+.foot img{
+    max-width: 25%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+.fa-cog, .foot p{
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+@media all and (max-width: 992px){
+    .card-text-custom{
+        display: block;
+    }
+    .genre{
+        font-size: smaller;
+    }
+    
+}
+
+@media all and (max-width: 768px){
+    .genre{
+        font-size: 65%;
+    }
+    .offers{
+        width: 100%;
+    }
+    .offer-card{
+        float: none;
+        width: 100%;
+        margin-top: 2%;
+    }
+    .offer-img{
+        width: 100%;
+    }
+    .offer-img img{
+        margin: 0 auto;
+    }
+
+    .offer footer .text{
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .offer footer button{
+        float: none;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: 2%;
+    }
+
+    .team-card{
+        width: 48%;
+    }
+
+    .credentials, .message{
+        float: left;
+        width: 48%;
+        padding-right: 5%;
+        margin-top: 5%;
+    }
+    .info{
+        float: none;
+    }
+
+    .web .web-image:first-child{
+        display: none;
+    }
+
+    .tags{
+        position: absolute;
+        color: white;
+        padding: 0 10px;
+        background-color: red;
+        width: 70px;
+        bottom: 150px;
+        left: 6%;
+        font-size: 80%;
+    }
+    .news-title{
+        position: absolute;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        bottom: 100px;
+        left: 6%;
+    }
+    .preview, .author, .time{
+        position: absolute;
+        color: white;
+        /* font-weight: bold; */
+        font-size: 10px;
+        bottom: 80px;
+        left: 6%;
+    }
+    .author{
+        bottom: 60px;
+        color: silver;
+    }
+
+    .time{
+        bottom: 30px;
+        color: silver;
+    }
+    .offer-card .logo{
+        width: 10%;
+        padding: 2%;
+    }
+}
+
+@media all and (max-width: 576px){
+    .genres .music-item{
+        display: none;
+    }
+    .genres .music-item:first-child{
+        display: block;
+    }
+    .team-card{
+        width: 100%;
+    }
+    .team-card:not(:first-child){
+        display: none;
+    }
+
+     .web .web-image:not(:last-child){
+        display: none;
+    }
+
+    .credentials, .message, .info{
+        float: none;
+        width: 100%;
+        padding-right: 5%;
+        margin-top: 5%;
+    }
+
+    .foot i{
+        border: none;
+    }
+
+    .small-news{
+        width: 100%;
+        margin-top: 2%
+    }
+
+}

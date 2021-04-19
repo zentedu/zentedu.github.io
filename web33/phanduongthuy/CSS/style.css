@@ -1,0 +1,486 @@
+* {
+	box-sizing: border-box;
+}
+	
+a{	
+	font-style: none;
+}
+* hr{
+	height: 3px;
+	width: 50px;
+}
+
+ul li {
+	list-style: none;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+.toTop {
+	bottom: 0 !important;
+	right: 0 !important;
+
+}
+
+.clearBoth {
+	clear: both;
+}
+/*Header*/
+
+header {
+	width: 100%;
+}
+
+	.company-logo {
+			width: 100px; 
+			height: 40px;
+
+	}
+
+header .main-menu {
+
+	}
+header .main-menu a img:hover {
+	border: 3px outset #939191;
+}
+header .banner {
+	padding-top: 66px;
+	position: relative;
+}
+	
+	.banner img {
+		width: 100%;
+	}
+	.banner h1 {
+		color: white;
+	}
+	.banner .button {
+		font-weight: bold;
+		color: white;
+	}
+	.banner a {
+		color: white;
+		font-weight: bold;
+	}
+	.banner .hand-down {
+		position: absolute;
+		bottom: 10px;
+		left: 49%;
+	}
+	.carousel-caption{
+		bottom: 40%;
+	}
+	.carousel-caption h1 {
+		font-weight: bold !important;
+		font-size: 100px !important;
+	}
+	.home {
+		width: 100%;
+		position: absolute;
+		top: 40%;
+	}
+	.card-custom{
+		background: none !important;
+		border: none !important;
+	}
+	.collapse .active {
+		border-bottom: 2px solid #F82929;
+	}
+/*Section*/
+
+section {
+
+}
+
+/*.conatruction*/
+	.construction {
+		
+	}
+	.firstTitle .card {
+		border: none;
+	}
+	.construction .row .card {
+		border: none;
+	}
+/*	.construction .row .card img {
+		height: 200px;
+	}*/
+
+	/*....*/
+		.card-hover{
+			border: none;
+			overflow: hidden;
+			cursor: pointer;
+		}
+		.card-hover:hover{
+			box-shadow: 5px 5px 10px 0px gray;
+		}
+		.img-cons{
+			position: relative;
+			overflow: hidden;
+		}
+		.text-in-cons{
+			position: absolute;
+			top: 0;
+			color: white;
+		    opacity: 0;
+		    transition: 0.7s;
+		}
+		.card-hover:hover .img-cons-re{
+			filter: blur(2px);
+		    transform: scale(1.4);
+		    transition: 0.5s;
+		}
+		.card-hover:hover .text-in-cons{
+			opacity: 1;
+		}
+
+
+/*.about us*/
+	
+	.aboutUs {
+		background: #CDCBCB;
+	}
+	.aboutUs .container {
+		
+	}
+	.aboutUs .container .firstTitle {
+		width: 90%;
+		margin: 0 auto;	
+		background: #CDCBCB !important;
+	}
+	.aboutUs .firstTitle .card .card-body {
+		padding: 25px;
+	}
+/*	.aboutUs .container .images {
+		width: 70%;
+	}*/
+	.aboutUs .container .images img{
+		width: 100%;
+/*		height: 300px;*/
+	}
+
+	/*milestone*/
+	#milestone {
+		background-image: url(../image/bg-section-facts.jpg);
+	}
+	#milestone #content {
+		/*background: #000000c7;*/
+		padding: 40px 0;
+	}
+	#milestone #content .row span {
+		color: #d39e00;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	#milestone #content .row .title {
+		margin-top: 20px;
+	}
+	#milestone #content .row .title h5 {
+		color: white;
+	}
+
+/*recent works*/
+
+	.recent-works .container .choose ul{
+       width: 400px !important;
+       margin: auto !important;
+    }
+    .recent-works .container .choose ul li {
+    	margin: 10px !important;
+       	color: #212121 !important;
+       	padding: 10px 12px !important;
+       	font-size: 16px !important;
+       	box-shadow: 3px 5px 5px rgb(0,0,0,0.23) !important;
+       	border-radius: 2px !important;
+    }
+    .box_img {
+    	position: relative;
+    }
+    .box_img img{
+    	cursor: pointer;
+    }
+    .box_img img:hover{
+		/*transform: scale(1.1);*/
+	}
+
+    .image {
+    	width: 100%;
+    	/*height: 220px;*/
+    }
+
+    .btn-active {
+    	background: #07E24A;
+    	border: 2px outset #070707;
+    	border-radius: 20px !important;
+    	font-weight: bold;
+    	color: white;
+    }
+
+    .btn-choose:hover {
+    	background: #F2FA24;
+    	border: 2px outset #070707;
+    	border-radius: 20px !important;
+
+    }
+/*What we offer*/
+
+	.What-we-offer {
+		margin: 50px 0;
+	}
+
+	.firstTitle .card .card-body p {
+		margin: 25px !important;	
+	}
+	
+
+/*what-other-say*/
+	.what-other-say {
+		margin: 50px 0;
+	}
+
+	.box-item {
+		background: gray;
+		position: relative;
+	}
+
+	.item-img {
+		width: 25% !important;
+	    position: absolute;
+	    left: 37%;
+	}
+	.item-img img{
+		width: 100%;
+		border-radius: 50%;
+		box-shadow: 2px 5px 10px black;
+	}
+
+	.item-text {
+		background: white;
+
+	}
+	.text-obj {
+		background: #C8D0D0;
+		box-shadow: 5px 5px 10px #B8B9B9;
+		text-align: justify;
+		padding: 0 20px;
+		/*padding-top: 20px !important;*/
+	}
+	.wid-item {
+		width: 320px !important;
+	}
+	.text-box {
+		/*margin-bottom: 30px !important;*/
+	}
+
+	.owl-carousel .owl-dots.disabled/*, .owl-carousel .owl-nav.disabled*/{
+		display: block !important;
+	}
+
+	.owl-theme .owl-nav.disabled+.owl-dots {
+		margin-top: 50px; 
+	}
+
+/*Our team*/
+	.our-team #our-team {
+		width: 90%;
+	}
+		.img-team-re{
+			position: relative;
+			overflow: hidden;
+		}
+		.gray{
+			position: absolute;
+			top: 0%;
+			transform: scale(0.9);
+			opacity: 0.2;
+			border: 8px solid white;
+			transition: 1s;
+		}
+		.black{
+			position: absolute;
+			left: 0;
+			transform: rotate(45deg);
+			top: 0;
+			opacity: 0.1;
+			border: 8px solid white;
+			transition: 0.5s;
+		}
+		.img-team-re:hover .gray{
+			transform: scale(1.1);
+			opacity: 0;
+		}
+		.img-team-re:hover .black{
+			transform: scale(1.5);
+			left: -100%;
+		}
+		.img-team-re:hover .rotate-img{
+			transform: rotateY(180deg);
+			transition: 1s;
+		}
+		.img-team-re:hover .icon-hid{
+			opacity: 1;
+		}
+		.icon-hid{
+			position: absolute;
+			top: 10%;
+			left: 5%;
+			opacity: 0;
+			color: white;
+			transition: 1s;
+		}
+
+
+
+
+ /*Why cho0se us?*/
+
+ 	.why-choose-us {
+ 		margin-top: 30px;
+ 	}
+
+
+ /* Contact */
+ 	.input input {
+ 		height: 40px;
+ 		width: 100%;
+ 		transition: width .35s ease-in-out;
+
+ 	}
+ 	/*.input input:focus {
+ 		width: 100%;
+ 	}*/
+
+ 	.error {
+ 		color: red;
+ 		font-style: italic;
+ 	}
+
+
+/*Donor*/
+	.donors .owl-item {
+		width: 285px !important;
+	}
+	.donors .item {
+		height: 100px;
+		padding-top: 40px;
+		text-align: center;
+	}
+	.donors .item a{
+		margin-top: 20px;
+	}
+	.donors .item i{
+		font-size: 50px;
+	}
+
+	.donors .item span {
+		font-size: 24px;
+		margin-left: 5px;
+		font-weight: bold;
+	}
+	#item1 span{
+		font-family: 
+	}
+
+	#item2 span{
+		font-family: 'Pacifico', cursive;
+	}
+
+	#item3 span{
+		font-family: 'Reggae One', cursive;
+	}
+
+	#item4 span{
+		font-family: 'Oi', cursive;
+		font-weight: 400;
+	}
+
+	#item5 span{
+		font-family: 'RocknRoll One', sans-serif;
+	}
+
+	#item6 span{
+		font-family: 'Press Start 2P', cursive;
+	}
+
+	#item7 span{
+		font-family: 'Sacramento', cursive;
+	}
+
+
+/*Footer*/
+
+	footer {
+		background: #E2E2E2;
+	}
+	.heading a i{
+		font-size: 50px;
+	}
+
+
+	.footer-logo {
+		width: 30%;
+	}
+
+	.licence {
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	
+.animate__animated {
+	animation-duration: 1.5s;
+}
+
+
+/*....*/
+.img-team-re{
+	position: relative;
+	overflow: hidden;
+}
+.gray{
+	position: absolute;
+	top: 0%;
+	transform: scale(0.9);
+	opacity: 0.2;
+	border: 8px solid white;
+	transition: 1s;
+}
+.black{
+	position: absolute;
+	left: 0;
+	transform: rotate(45deg);
+	top: 0;
+	opacity: 0.1;
+	border: 8px solid white;
+	transition: 0.5s;
+}
+.img-team-re:hover .gray{
+	transform: scale(1.1);
+	opacity: 0;
+}
+.img-team-re:hover .black{
+	transform: scale(1.5);
+	left: -100%;
+}
+.img-team-re:hover .rotate-img{
+	transform: rotateY(180deg);
+	transition: 1s;
+}
+.img-team-re:hover .icon-hid{
+	opacity: 1;
+}
+.icon-hid{
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	opacity: 0;
+	color: white;
+	transition: 1s;
+}
+.box_img img{
+	width: 100%;
+	height: 100%;
+	min-height: 200px;
+}
