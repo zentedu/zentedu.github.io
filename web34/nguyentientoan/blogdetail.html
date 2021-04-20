@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog Detail</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<script src="./js/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="./library/bootstrap/css/bootstrap.min.css">
+	<script src="./library/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="./library/HoverMaster/css/hover-min.css">
+	<link rel="stylesheet" href="./css/blogdetail.css">
+	<link rel="stylesheet" href="./css/navbar.css">
+	<link rel="stylesheet" href="./library/animateCss/animate.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Imbue:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./library/OwlCarousel/dist/assets/owl.carousel.min.css">
+	<script src="./library/validation/dist/jquery.validate.min.js"></script>
+</head>
+<body>
+	<header id="hea">
+		<div id="qc">
+			<div id="contact-hea" class="row">
+				<div class="col-6 d-flex align-items-center">
+					<div class="font-weight-bold text-white">Big results require big ambitions</div>
+				</div>
+				<div class="col-6 d-flex justify-content-end align-items-center">
+					<div class="icon-qc h-100 d-flex align-items-center justify-content-center">
+						<i class="fas fa-phone-alt text-white"></i>
+					</div>
+					<div class="font-weight-bold text-white">Call now: 0123-456-789</div>
+					<i id="close-qc" class="far fa-times-circle hvr-pulse-grow text-white"></i>
+				</div>
+			</div>
+		</div>
+
+		<div id="menu-bar">
+			<div id="menu-list" class="row h-100 clearmag">
+				<div class="col-10 d-sm-flex col-sm-10 d-md-none d-lg-flex col-lg-3 col-xl-3 d-flex align-items-center">
+					<div id="logo">Soffets</div>
+				</div>
+				<div class="d-none d-sm-none d-md-flex col-md-12 col-lg-9 col-xl-9 justify-content-md-center justify-content-lg-end justify-content-xl-end auu">
+					<nav class="d-flex flex-row">
+						<div class="menu-tag h-100 d-flex align-items-center">
+							<a href="./index.html" class="text-decoration-none">HOME</a>
+						</div>
+						<div class="menu-tag h-100 d-flex align-items-center">
+							<a href="./about.html" class="text-decoration-none">ABOUT</a>
+						</div>
+						<div class="menu-tag h-100 d-flex align-items-center">
+							<a href="./awards.html" class="text-decoration-none">AWARDS</a>
+						</div>
+						<div class="menu-tag h-100 d-flex align-items-center">
+							<a href="./member.html" class="text-decoration-none">MEMBERS</a>
+						</div>
+						<div class="menu-tag h-100 d-flex align-items-center">
+							<a href="./chooseus.html" class="text-decoration-none">CHOOSE</a>
+						</div>
+						<div class="menu-tag h-100 d-flex align-items-center">
+							<a href="./blog.html" class="text-decoration-none">POST</a>
+						</div>
+						<div class="menu-tag h-100 d-flex align-items-center">
+							<a href="./blogdetail.html" class="text-decoration-none">DETAIL</a>
+						</div>
+					</nav>
+				</div>
+
+				<div class="col-2 d-sm-flex col-sm-2 d-md-none d-lg-none d-xl-none d-flex align-items-center justify-content-end list-bar">
+					<i class="fas fa-bars" id="bar1"></i>
+					<i class="fas fa-times clos" id="bar2"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu-small animate__animated d-none d-md-none d-lg-none d-xl-none">
+			<a href="./index.html" class="text-white text-decoration-none font-weight-bold"><div><i class="fas fa-home"></i></div> Home</a>
+			<a href="./about.html" class="text-white text-decoration-none font-weight-bold"><div><i class="far fa-building"></i></div> About</a>
+			<a href="./awards.html" class="text-white text-decoration-none font-weight-bold"><div><i class="fas fa-podcast"></i></div> Awards</a>
+			<a href="./member.html" class="text-white text-decoration-none font-weight-bold"><div><i class="fas fa-seedling"></i></div> Members</a>
+			<a href="./chooseus.html" class="text-white text-decoration-none font-weight-bold"><div><i class="fab fa-blogger-b"></i></div> Choose</a>
+			<a href="./blog.html" class="text-white text-decoration-none font-weight-bold"><div><i class="far fa-paper-plane"></i></div> Post</a>
+			<a href="./blogdetail.html" class="text-white text-decoration-none font-weight-bold"><div><i class="far fa-id-badge"></i></div> Detail</a>
+		</div>
+
+		<div id="bg-hea">
+			<div id="triangle-bottomleft"></div>
+			<div id="triangle-bottomright"></div>
+			<div id="name-page">
+				<h1>Blog Detail</h1>
+				<span>Home</span><i class="fas fa-angle-double-right"></i><span>Blog</span>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<article id="flagall-3">
+			<div id="boxall-3">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
+						<div id="detailall3">
+							<b id="titleall3">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facilis, assumenda, ullam reiciendis quibusdam enim.
+							</b>
+							<div id="timeall3">
+								<div id="authorall3">
+									08 January <div>By: Reid Hawes</div><span>Cyber Security</span>
+								</div>
+								<div id="interactiveall3">
+									83 Share <span>35 Comment</span>
+								</div>
+								<div class="clearb"></div>
+							</div>
+							<img src="./images/all1.jpg" alt="" id="imgall3">
+							<p class="textall3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quisquam aspernatur omnis molestiae nihil doloribus assumenda voluptas, ullam harum minus, impedit dicta facilis illo praesentium veniam neque illum reprehenderit explicabo eius distinctio deserunt temporibus eum consectetur consequatur. Nemo necessitatibus dolor, porro debitis voluptates, voluptatibus doloremque quaerat assumenda. Inventore, doloremque. Laudantium nihil doloremque nam itaque saepe placeat perspiciatis velit, adipisci quaerat.</p>
+							<p class="textall3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quisquam aspernatur omnis molestiae nihil doloribus assumenda voluptas, ullam harum minus, impedit dicta facilis illo praesentium veniam neque illum reprehenderit explicabo eius distinctio deserunt temporibus eum consectetur consequatur. Nemo necessitatibus dolor, porro debitis voluptates, voluptatibus doloremque quaerat assumenda. Inventore, doloremque. Laudantium nihil doloremque nam itaque saepe placeat perspiciatis velit, adipisci quaerat.</p>
+							<div id="quoteall3">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, veritatis aliquam vero, ea ratione ducimus quo maxime repudiandae aperiam quam.
+							</div>
+							<p class="textall3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quisquam aspernatur omnis molestiae nihil doloribus assumenda voluptas, ullam harum minus, impedit dicta facilis illo praesentium veniam neque illum reprehenderit explicabo eius distinctio deserunt temporibus eum consectetur consequatur. Nemo necessitatibus dolor, porro debitis voluptates, voluptatibus doloremque quaerat assumenda. Inventore, doloremque. Laudantium nihil doloremque nam itaque saepe placeat perspiciatis velit, adipisci quaerat.</p>
+							<b id="titleall3">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima dolores corporis laboriosam quaerat adipisci.
+							</b>
+							<p class="textall3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quisquam aspernatur omnis molestiae nihil doloribus assumenda voluptas, ullam harum minus, impedit dicta facilis illo praesentium veniam neque illum reprehenderit explicabo eius distinctio deserunt temporibus eum consectetur consequatur. Nemo necessitatibus dolor, porro debitis voluptates, voluptatibus doloremque quaerat assumenda. Inventore, doloremque. Laudantium nihil doloremque nam itaque saepe placeat perspiciatis velit, adipisci quaerat.</p>
+							<div class="owl-carousel owl-theme" id="slideall3">
+								<div class="item">
+									<img src="./images/all-2.jpg" alt="">
+								</div>
+								<div class="item">
+									<img src="./images/all-3.jpeg" alt="">
+								</div>
+								<div class="item">
+									<img src="./images/all-5.jpeg" alt="">
+								</div>
+								<div class="item">
+									<img src="./images/all-4.jpeg" alt="">
+								</div>
+								<div class="item">
+									<img src="./images/all-6.jpeg" alt="">
+								</div>
+								<div class="item">
+									<img src="./images/all-5.jpeg" alt="">
+								</div>
+							</div>
+							<b id="titleall3">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima dolores corporis laboriosam quaerat adipisci.
+							</b>
+							<p class="textall3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quisquam aspernatur omnis molestiae nihil doloribus assumenda voluptas, ullam harum minus, impedit dicta facilis illo praesentium veniam neque illum reprehenderit explicabo eius distinctio deserunt temporibus eum consectetur consequatur. Nemo necessitatibus dolor, porro debitis voluptates, voluptatibus doloremque quaerat assumenda. Inventore, doloremque. Laudantium nihil doloremque nam itaque saepe placeat perspiciatis velit, adipisci quaerat.</p>
+							<p class="textall3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quisquam aspernatur omnis molestiae nihil doloribus assumenda voluptas, ullam harum minus, impedit dicta facilis illo praesentium veniam neque illum reprehenderit explicabo eius distinctio deserunt temporibus eum consectetur consequatur. Nemo necessitatibus dolor, porro debitis voluptates, voluptatibus doloremque quaerat assumenda. Inventore, doloremque. Laudantium nihil doloremque nam itaque saepe placeat perspiciatis velit, adipisci quaerat.</p>
+							<div id="shareall3">
+								<div id="ssshare1">
+									<b>Tags:</b> Cyber, <span>Security,</span> Management
+								</div>
+								<div id="ssshare2">
+									<b>Share:</b>
+									<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+									<a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+								</div>
+								<div class="clearb"></div>
+							</div>
+							<hr id="befocomm3">
+							<b id="titleall3">Comment</b>
+							<div id="commeall3">
+								<hr>
+								<div class="media">
+									<img src="./images/aw-3.png" alt="John Doe" class="avvatarall3">
+									<div class="media-body">
+										<h5>John Doe <small class="float-right"><b>25 August, 2020</b><span>10:38 am</span></small></h5>
+										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi sunt facere laborum accusamus corrupti minima in sed esse quibusdam modi. Cum, molestias natus omnis quaerat quasi sint veritatis reprehenderit nobis?</p>
+										<a href="#"><i class="fas fa-reply"></i> Reply</a>
+										<hr class="cmnone3">
+										<div class="media cmnone3">
+											<img src="./images/aw-2.jpg" alt="John Doe" class="avvatarall3">
+											<div class="media-body">
+												<h5>John Doe <small class="float-right"><b>25 August, 2020</b><span>10:38 am</span></small></h5>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+												<a href="#"><i class="fas fa-reply"></i> Reply</a>
+											</div>
+										</div> 
+									</div>
+								</div>
+								<hr>
+								<div class="media">
+									<img src="./images/aw-1.jpg" alt="John Doe" class="avvatarall3">
+									<div class="media-body">
+										<h5>John Doe <small class="float-right"><b>25 August, 2020</b><span>10:38 am</span></small></h5>
+										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi sunt facere laborum accusamus corrupti minima in sed esse quibusdam modi. Cum, molestias natus omnis quaerat quasi sint veritatis reprehenderit nobis?</p>
+										<a href="#"><i class="fas fa-reply"></i> Reply</a>
+									</div>
+								</div>
+								<hr>
+							</div>
+							<div id="subcomall3">
+								<form action="" id="wrapcomall3">
+									<h4>Leave A Comments:</h4>
+									<div class="row">
+										<div class="col-12 col-md-12 col-lg-6 col-xl-6">
+											<input type="text" name="fname" placeholder="Full Name">
+										</div>
+										<div class="col-12 col-md-12 col-lg-6 col-xl-6">
+											<input type="email" name="femail" placeholder="Email Here">
+										</div>
+										<div class="col-12">
+											<textarea name="tarea" placeholder="Type comment"></textarea>
+										</div>
+									</div>
+									<button class="btn btn-primary">Submit Comment</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3" id="vecall-3">
+						<div id="undoall">
+							<h1 class="searchall3">Search</h1>
+							<div id="searchall3-bar">
+								<input type="text" placeholder="Search Here">
+								<i class="fas fa-search"></i>
+							</div>
+
+							<h1 class="searchall3">Recent Post</h1>
+							<div id="postall3">
+								<img src="./images/aw-1.jpg" alt="">
+								<div>
+									<a href="./blogdetail.html"></a>
+									<p>22.02.2021</p>
+									<b>Lorem ipsum dolor sit, amet consectetur.</b>
+								</div>
+								<hr>
+								<img src="./images/aw-2.jpg" alt="">
+								<div>
+									<a href="./blogdetail.html"></a>
+									<p>22.02.2021</p>
+									<b>Lorem ipsum dolor sit, amet consectetur.</b>
+								</div>
+								<hr>
+								<img src="./images/aw-5.jpg" alt="">
+								<div>
+									<a href="./blogdetail.html"></a>
+									<p>22.02.2021</p>
+									<b>Lorem ipsum dolor sit, amet consectetur.</b>
+								</div>
+							</div>
+
+							<h1 class="searchall3">Category List</h1>
+							<div id="categoryall3">
+								<div>
+									<a href="./chooseus.html"></a>
+									<i class="fas fa-angle-double-right"></i>
+									Server Mangement
+								</div>
+								<div>
+									<a href="./chooseus.html"></a>
+									<i class="fas fa-angle-double-right"></i>
+									IT Consultancy
+								</div>
+								<div>
+									<a href="./chooseus.html"></a>
+									<i class="fas fa-angle-double-right"></i>
+									Cyber Security
+								</div>
+								<div>
+									<a href="./chooseus.html"></a>
+									<i class="fas fa-angle-double-right"></i>
+									Managed IT Services
+								</div>
+								<div>
+									<a href="./chooseus.html"></a>
+									<i class="fas fa-angle-double-right"></i>
+									Software Development
+								</div>
+							</div>
+
+							<h1 class="searchall3">Instragram</h1>
+							<div id="instragramall-3" class="row">
+								<div class="col-4 instraall-3">
+									<img src="./images/aw-1.jpg" alt="">
+									<a href="https://www.instagram.com/" class="animate__animated animate__zoomIn"><i class="fab fa-instagram"></i></a>
+								</div>
+								<div class="col-4 instraall-3">
+									<img src="./images/aw-2.jpg" alt="">
+									<a href="https://www.instagram.com/" class="animate__animated animate__zoomIn"><i class="fab fa-instagram"></i></a>
+								</div>
+								<div class="col-4 instraall-3">
+									<img src="./images/aw-3.png" alt="">
+									<a href="https://www.instagram.com/" class="animate__animated animate__zoomIn"><i class="fab fa-instagram"></i></a>
+								</div>
+								<div class="col-4 instraall-3">
+									<img src="./images/aw-4.jpg" alt="">
+									<a href="https://www.instagram.com/" class="animate__animated animate__zoomIn"><i class="fab fa-instagram"></i></a>
+								</div>
+								<div class="col-4 instraall-3">
+									<img src="./images/aw-5.jpg" alt="">
+									<a href="https://www.instagram.com/" class="animate__animated animate__zoomIn"><i class="fab fa-instagram"></i></a>
+								</div>
+								<div class="col-4 instraall-3">
+									<img src="./images/aw-6.jpg" alt="">
+									<a href="https://www.instagram.com/" class="animate__animated animate__zoomIn"><i class="fab fa-instagram"></i></a>
+								</div>
+								<div class="col-12 d-sm-flex justify-content-sm-center" id="inspan3">
+									<span id="inspanall1">Posts</span>
+									<span id="inspanall2">Like</span>
+									<span id="inspanall3">Comment</span>
+								</div>
+							</div>
+
+							<h1 class="searchall3">Subcribe Now</h1>
+							<form action="" id="suball3">
+								<input type="email" placeholder="Email here" name="emailall3">
+								<button type="submit" class="btn btn-primary">Submit Now</button>
+							</form>
+
+							<h1 class="searchall3">Popular Tags</h1>
+							<div id="tagall3">
+								<button>Services</button>
+								<button>Cyber</button>
+								<button>Security</button>
+								<button>Design</button>
+								<button>Manage</button>
+								<button>Develop</button>
+								<button>UI/UX</button>
+								<button>Graphic</button>
+								<button>Company</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<footer id="foo">
+		<a href="#hea" class="text-decoration-none text-white" id="uptop"><i class="fas fa-arrow-up"></i></a>
+		<div class="top-foo">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+					<div class="row" id="contact">
+						<div class="col-xl-12">
+							<p class="title-foo">Contact</p>
+						</div>
+						<div class="col-xl-12">
+							<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Consequatur dolorum perspiciatis neque reprehenderit repudiandae, iste repellat? Ea, dolores optio voluptatibus tempore quibusdam fugit, quaerat suscipit debitis, officiis officia aperiam, atque ullam expedita magni nostrum pariatur itaque. Quia ullam, libero reprehenderit nihil. Excepturi, fugiat est doloribus?</p>
+						</div>
+						<div class="col-xl-12">
+							<form id="send-email">
+								<input type="email" placeholder="Email here" required>
+								<button type="submit" class="hvr-pulse">SEND</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1"></div>
+				<div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
+					<div class="row" id="category">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<p class="title-foo">Category</p>
+						</div>
+						<div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-6 hvr-icon-grow-rotate">
+							<i class="fas fa-location-arrow hvr-icon"></i>
+							<a href="./about.html" class="text-white text-decoration-none hvr-skew-forward">Java</a>
+						</div>
+						<div class="col-6 col-sm-4 col-md-6 col-lg-7 col-xl-6 hvr-icon-grow-rotate">
+							<i class="fas fa-location-arrow hvr-icon"></i>
+							<a href="./about.html" class="text-white text-decoration-none hvr-skew-forward">Python</a>
+						</div>
+						<div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-6 hvr-icon-grow-rotate">
+							<i class="fas fa-location-arrow hvr-icon"></i>
+							<a href="./about.html" class="text-white text-decoration-none hvr-skew-forward">C/C++</a>
+						</div>
+						<div class="col-6 col-sm-4 col-md-6 col-lg-7 col-xl-6 hvr-icon-grow-rotate">
+							<i class="fas fa-location-arrow hvr-icon"></i>
+							<a href="./about.html" class="text-white text-decoration-none hvr-skew-forward">PHP</a>
+						</div>
+						<div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-6 hvr-icon-grow-rotate">
+							<i class="fas fa-location-arrow hvr-icon"></i>
+							<a href="./about.html" class="text-white text-decoration-none hvr-skew-forward">Swifl</a>
+						</div>
+						<div class="col-6 col-sm-4 col-md-6 col-lg-7 col-xl-6 hvr-icon-grow-rotate">
+							<i class="fas fa-location-arrow hvr-icon"></i>
+							<a href="./about.html" class="text-white text-decoration-none hvr-skew-forward">Ruby</a>
+						</div>
+						<div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-6 hvr-icon-grow-rotate">
+							<i class="fas fa-location-arrow hvr-icon"></i>
+							<a href="./about.html" class="text-white text-decoration-none hvr-skew-forward">Kotlin</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+					<div class="row" id="location">
+						<div class="col-xl-12">
+							<p class="title-foo">Location</p>
+						</div>
+						<div class="col-xl-12">
+							<img src="./images/map.jpg" alt="" style="width: 100%;" id="map-foo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bot-foo">
+			<div class="row">
+				<div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+					<div class="copyright d-flex align-items-center h-100">
+						<span class="text-white">Copyright © 2021 TienToan</span>
+						<span class="text-white">All Rights Reserved</span>
+					</div>
+				</div>
+				<div class="d-none d-sm-inline-block col-sm-4 col-md-4 col-lg-4 col-xl-4">
+					<div class="social d-flex justify-content-end">
+						<a href="https://www.facebook.com/" class="d-flex align-items-center justify-content-center text-decoration-none hvr-bob"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/" class="d-flex align-items-center justify-content-center text-decoration-none hvr-bob"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.instagram.com/" class="d-flex align-items-center justify-content-center text-decoration-none hvr-bob"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.twitch.tv/" class="d-flex align-items-center justify-content-center text-decoration-none hvr-bob"><i class="fab fa-twitch"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="menu-popup">
+		<div id="popup-list">
+			<div class="popup-item">
+				<a href="#hea" class="d-flex align-items-center
+				justify-content-center text-decoration-none text-white"><i class="fas fa-chess-king"></i></a>
+			</div>
+		</div>
+		<div id="popup">
+			<i class="fas fa-plus dot"></i>
+		</div>
+	</div>
+
+	<script src="./js/navbar.js"></script>
+	<script src="./js/blog.js"></script>
+	<script src="./library/OwlCarousel/dist/owl.carousel.min.js"></script>
+</body>
+</html>
+
+<!--
+#0085EF
+#10213E
+#F4F6F7
+-->

@@ -1,0 +1,2125 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: calibri;
+}
+@font-face {
+  font-family: 'unicons';
+  src: url('unicons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+a{
+  cursor: pointer;
+}
+
+@-webkit-keyframes border-transform {
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; }
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; }
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; }
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; }
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; }
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; }
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; }
+}
+
+.progress-wrap {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,0.2);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  background-color: #fed501;
+}
+
+.progress-wrap.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.progress-wrap::after {
+  position: absolute;
+  font-family: 'unicons';
+  content: '\e84b';
+  text-align: center;
+  line-height: 50px;
+  font-size: 26px;
+  color: #fd8620;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.progress-wrap:hover::after {
+  opacity: 0;
+}
+
+.progress-wrap::before {
+  position: absolute;
+  font-family: 'unicons';
+  content: '\e84b';
+  text-align: center;
+  line-height: 50px;
+  font-size: 26px;
+  opacity: 0;
+  background: #fd8620;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.progress-wrap:hover::before {
+  opacity: 1;
+}
+
+.progress-wrap svg path {
+  fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+  stroke: #ff7600;
+  stroke-width: 4;
+  box-sizing: border-box;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.loadto{
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	opacity: 0.9;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10000;
+}
+.load{
+	width: 50px;
+	height: 50px;
+	border: 5px solid;
+	color: #26a1f7;
+	border-radius: 50%;
+	border-top-color:transparent;
+	animation: loader 1.2s linear infinite; 
+}
+@keyframes loader{
+	25%{
+		color: #f1e415;
+	}
+	50%{
+		color: #ec3d14;
+	}
+	75%{
+		color: #14ec4c;
+	}
+	to{
+		transform: rotate(360deg);
+	}
+} 
+#logo{
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  -webkit-animation: my 800ms infinite;
+  -moz-animation: my 800ms infinite; 
+  -o-animation: my 800ms infinite; 
+  animation: my 800ms infinite;
+}
+@-webkit-keyframes my {
+ 0% { color: black; } 
+ 50% { color: #fed501;  } 
+ 100% { color: black;  } 
+}
+@-moz-keyframes my { 
+ 0% { color: black;  } 
+ 50% { color: #fed501;  }
+ 100% { color: black;  } 
+}
+@-o-keyframes my { 
+ 0% { color: black; } 
+ 50% { color: #fed501; } 
+ 100% { color: black;  } 
+}
+@keyframes my { 
+ 0% { color:black ; } 
+ 50% { color: #fed501;  }
+ 100% { color: black;  } 
+} 
+.navbar{
+  background-color: #fffffa;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.navbar li a{
+  color: black;
+  font-weight: bold;
+  padding-top: 5px;
+  }.navbar li a:hover{
+    color:white !important;
+    font-weight: bold;
+    background-color: #fed501;
+    transition: 0.4s;
+  }
+  .ctn{
+    width: 100%;
+  }
+  .container1{
+    background-color: white;
+  }
+  .chuaicon{
+    width: 80px;
+    height: 40px;
+    display: flex;
+  }
+  .container2{
+    z-index: 3000;
+    background-color: white;
+  }
+  .home{
+    position: relative;
+  }
+  .home:hover .menuc3{
+    display: block;
+    visibility: visible;
+    }.home11{
+      position: relative;
+    }
+
+    .home11:hover .menuc31{
+      visibility: visible;
+      display: block;
+    }
+    .menuc3{
+      display: none;
+      background-color: #fed501;
+      width: 150px;
+      line-height: 30px;
+      position: absolute;
+      text-decoration: none; 
+      visibility: hidden;
+      }.menuc31{
+        display: none;
+        background-color: #fed501;
+        width: 150px;
+        height: 100px;
+        line-height: 30px;
+        position: absolute;
+        text-decoration: none; 
+        visibility: hidden;
+      }
+      .lic3{
+        height: 35px;
+        line-height: 35px;
+        position: relative;
+        text-align: justify !important;
+        padding-left: 20px;
+        margin: -1px 0;
+        border: 2px solid orange;
+      }
+      .lic3 .c3{
+        color: white !important;
+        text-decoration: none;
+      }
+      .lic3 .c3:hover{
+        color: #1584b9 !important;
+      }
+      .muiten{
+        color: white;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+      }
+      .quote{
+        width: 150px;
+        height: 40px;
+        background-color: #fed501;
+        line-height: 40px;
+        text-align: center;
+      }
+      .quote a{
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+      }
+      .quote i{
+        padding-left: 5px;
+      }
+      .cotcon3{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .chuavitri{
+        width: 69%;
+        height: 100px;
+        display: flex;
+      }
+      .vitri{
+        width: 33%;
+        display: flex;
+        border-right:1px solid #e7e7e7;
+      }
+      .iconvitri{
+        margin-left: 30px;
+        width: 10%;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+      }
+      .iconvitri i{
+        font-size: 25px;
+        color: #fed501;
+      }
+      .ttvitri{
+        padding-left: 10px;
+        width: 90%;
+        height: 100px;
+        padding-top: 25px;
+      }
+      .ttvitri h6{
+        font-weight: bold;
+      }
+      .ttvitri span{
+        color: gray;
+      }
+      .chuangonngu{
+        width: 180px;
+        height: 100px;
+        display: flex;
+      }
+      .chuaco{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        padding-top: 25px;
+      }
+      .co{
+        width: 40px;
+        height: 40px;
+        margin-top: 8px;
+      }
+      .co img{
+       border-radius: 50px;
+       width: 100%;
+       height: 100%;
+     }
+     .ENG{
+      height: 50px;
+      line-height: 50px;
+      padding-left: 5px;
+      font-weight: bold;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .chuaicon{
+      width: 90px;
+      height: 100px;
+      justify-content: space-between;
+    }
+    .shop{
+      width: 33px;
+      height: 100px;
+      position: relative;
+    }
+    .shop i{
+      font-size: 23px;
+      padding-top: 37px;
+    }
+    .shop div{
+      text-align: center;
+      background-color: #fed501;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      border-radius: 50px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+    }
+    .search{
+      width: 35px;
+      font-size: 24px;
+      height: 100px;
+      line-height: 100px;
+    }
+    .w-100{
+      width: 100% !important;
+      height: 500px;
+    }
+    .slide {
+      position: relative;
+    }
+    .slide li{
+      background-color: #fed501 !important;
+    }
+    .welcome{
+      width: 80%;
+      position: absolute;
+      top: 20%;
+      left: 10%;
+    }
+    .welcome h1{
+      color: white;
+      font-family: 'Chakra Petch', sans-serif;
+    }
+    .welcome span{
+      font-weight: bold;
+      color: #fed501;
+      font-family: 'Chakra Petch', sans-serif; 
+    }
+    .textwelcome{
+      font-size: 18px;
+      width: 50%;
+      color: #e7e7e7;
+    }
+    .chuaview{
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .view{
+      margin-top: 50px;
+      width: 140px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background-color: #fed501;
+    }
+    .view a{
+      text-decoration: none;
+      color: black;
+    }
+    .view i{
+      padding-left: 5px;
+    }
+    .container5{
+      padding: 80px 0;
+    }
+    .cot1con5{
+      position: relative;
+      width: 100%;
+      height: 350px;
+    }
+    video{
+      width: 95%;
+      height: 100%;
+    }
+    .play{
+      box-shadow: 0px 0px 7px 4px gray;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      top: 45%;
+      border-radius: 50px; 
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+    }
+    .cot2con5{
+      width: 100%;
+      height: 100%;
+    }
+    .buildcos{
+      margin-top: 50px;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Chakra Petch', sans-serif; 
+      width: 200px;
+      height: 25px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .chuavach{
+      width: 50px;
+      position: relative;
+    }
+    .vachngan{
+      position: absolute;
+      top: 59%;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: #fed501;
+    }
+    .vachdai{
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 45px;
+      height: 2px;
+      background-color: #fed501;
+    }
+    .chuto{
+      width: 100%;
+      height: 50px;
+    }
+    .chuto h2{
+      font-size: 22px;
+      font-weight: bold;
+      font-family: 'Chakra Petch', sans-serif; 
+    }
+    .noidungcon5{
+      width: 100%;
+    }
+    .nutcon5{
+      text-align: center;
+      width: 150px;
+      height: 40px;
+      margin-top: 20px;
+      line-height: 40px;
+      background-color: #fed501;
+    }
+    .nutcon5 a{
+      color: black;
+      text-decoration: none;
+    }
+    .nutcon5 i{
+      padding-left: 5px;
+    }
+    .container6{
+      padding: 80px 0;
+      background-color: #262626;
+    }
+    .buildcos1{
+      margin-top: 20px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Chakra Petch', sans-serif; 
+      width: 145px;
+      height: 25px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .ourkey{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .ourkey h2{
+      padding-top: 10px;
+      color: white;
+      font-weight: bold;
+      font-family: 'Chakra Petch', sans-serif; 
+    }
+    .ourkey a{
+      margin-top: 20px;
+      color: white;
+      text-decoration: underline;
+    }
+    .ourkey i{
+      padding-left: 5px;
+    }
+    .concot{
+      background-color: white;
+      height: 210px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      border: 0.5px solid #cccccc;
+      padding: 20px 0px;
+    }
+    .concot:hover{
+      background-color: #262626;
+      transform: scale(1.05);
+      transition: 0.2s;
+      color: white;
+    }
+    .concot:hover .connd{
+      background-color: white;
+    }
+  .concot img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  .noidung{
+    padding: 0 10px;
+  }
+  .noidung h4{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .cot{
+    padding: 20px;
+  }
+  .connd{
+    text-align: center;
+    line-height: 30px;
+    width: 100px;
+    height: 30px;
+    background-color: #fed501;
+  }
+  .noidung p{
+    font-size: 12px;
+  }
+  .connd a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Chakra Petch', sans-serif;
+  }
+  .container7{
+    width: 100%;
+    padding: 80px 0;
+  }
+  .buildcos2{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif; 
+    width: 220px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dream{
+    width: 100%;
+    height: 60px;
+  }
+  .dream h2{
+    line-height: 60px;
+    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif; 
+  }
+  .textcon7{
+    width: 50%;
+  }
+  .nutcon7{
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #fed501;
+  }
+  .nutcon7 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+  }
+  .container8{
+    background-color: #333333;
+    width: 100%;
+    padding: 80px 0; 
+  }
+  .buildcos3{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif; 
+    width: 220px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .explore{
+    width: 100%;
+    height: 60px;
+  }
+  .explore h2{
+    text-transform: uppercase;
+    color: white;
+    line-height: 60px;
+    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif; 
+  }
+  .ulfilter{
+    padding-top: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ulfilter li{
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    padding: 7px;
+  }
+  .ulfilter li:hover{
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fed501;
+    background-color: white;
+    transition: 0.3s;
+  }
+  .filtr-item{
+    padding-top: 25px;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+  }
+  .filtr-item img{
+    width: 100%;
+    height: 100%;
+  }
+  figure.snip1477 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    min-width: 230px;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    background-color: #000000;
+  }
+  figure.snip1477 *,
+  figure.snip1477 *:before,
+  figure.snip1477 *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.55s ease;
+    transition: all 0.55s ease;
+  }
+  figure.snip1477 img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+    opacity: 0.9;
+  }
+  figure.snip1477 .title {
+    position: absolute;
+    top: 58%;
+    left: 25px;
+    padding: 5px 10px 10px;
+  }
+  figure.snip1477 .title:before,
+  figure.snip1477 .title:after {
+    height: 2px;
+    width: 400px;
+    position: absolute;
+    content: '';
+    background-color: #ffffff;
+  }
+  figure.snip1477 .title:before {
+    top: 0;
+    left: 10px;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  figure.snip1477 .title:after {
+    bottom: 0;
+    right: 10px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  figure.snip1477 .title div:before,
+  figure.snip1477 .title div:after {
+    width: 2px;
+    height: 300px;
+    position: absolute;
+    content: '';
+    background-color: #ffffff;
+  }
+  figure.snip1477 .title div:before {
+    top: 10px;
+    right: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  figure.snip1477 .title div:after {
+    bottom: 10px;
+    left: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  figure.snip1477 h3,
+  figure.snip1477 .btmfl {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  figure.snip1477 figcaption {
+    position: absolute;
+    bottom: 42%;
+    left: 25px;
+    text-align: left;
+    opacity: 0;
+    padding: 5px 60px 5px 10px;
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+  figure.snip1477 figcaption p {
+    margin: 0;
+  }
+  figure.snip1477:hover img,
+  figure.snip1477.hover img {
+    zoom: 1;
+    filter: alpha(opacity=35);
+    -webkit-opacity: 0.35;
+    opacity: 0.35;
+  }
+  figure.snip1477:hover .title:before,
+  figure.snip1477.hover .title:before,
+  figure.snip1477:hover .title:after,
+  figure.snip1477.hover .title:after,
+  figure.snip1477:hover .title div:before,
+  figure.snip1477.hover .title div:before,
+  figure.snip1477:hover .title div:after,
+  figure.snip1477.hover .title div:after {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  figure.snip1477:hover .title:before,
+  figure.snip1477.hover .title:before,
+  figure.snip1477:hover .title:after,
+  figure.snip1477.hover .title:after {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+  }
+  figure.snip1477:hover figcaption,
+  figure.snip1477.hover figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  .luxury h3{
+    font-size:18px;  
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif; 
+  }
+  .btnfl{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #fed501;
+  }
+  #chuchay{
+    background-color: #fed501;
+    color: white;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+  }
+  .btnfl a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+  .container9{
+    padding: 80px 0;
+  }
+  .buildcos4{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif; 
+    width: 190px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .conto{
+    width: 100%;
+  }
+  .concot9{
+    width: 100%;
+    height: 180px;
+    background-color: #333333;
+  }
+  .textcon9{
+    padding-top: 40px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .textcon9 span{
+    color: white;
+    font-size: 13px;
+  }
+  .chuasao{
+    width: 100%;
+    text-align: center;
+  }
+  .chuasao i{
+    color: #fed501;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    margin-left: 44%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #333333;
+  }
+  .anhcon9{
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+  .anhcon9 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+  }
+  .customer{
+    color: gray;
+    padding-top: 5px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .ten{
+   font-weight: bold;
+   font-family: 'Chakra Petch', sans-serif; 
+   width: 100%;
+   text-align: center;
+ }
+ .container10{
+  padding: 80px 0;
+  background-color: #333333;
+}
+.buildcos5{
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Chakra Petch', sans-serif; 
+  width: 210px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.chuanoidung{
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+.chuanoidung .chuaanh{
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.chuaanh img{
+  width: 100%;
+  height: 100%;
+}
+.chuaanh img:hover{
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+.connd1{
+  padding-top: 12px;
+  line-height: 23px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 65px;
+  background-color: #333333;
+}
+.connd1 p{
+  font-family: 'Rubik',sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  margin: 0 !important;
+}
+.connd1 span{
+  font-size: 15px;
+  font-weight: normal;
+  font-family: 'Chakra Petch', sans-serif;
+  color: white;
+}
+.nd1con4{
+  color: white;
+  padding-top: 15px;
+  width: 95%;
+  margin: 0 auto;
+  font-family: 'Chakra Petch', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+}
+.nd2con4{
+  height: 20px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.connd2{
+  width: 68%;
+  color: gray;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.connd2 img{
+  width: 17px !important;
+  height: 20px !important;
+}
+.owl-carousel .owl-item img {
+  display: inline-block !important;
+  width: 100%;
+}
+.con2nd2{
+
+  color: gray;
+  font-size: 11px;
+  border-left: 2px solid gray;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+.con2nd2 img{
+  width: 17px !important;
+  height: 18px !important;
+  margin-bottom: 3px;
+  margin-right: 12px;
+}
+.nd3con4{
+  margin-top: 10px;
+  font-size: 14px;
+  color: gray;
+}
+.read{
+  margin-top: 10px;
+  background-color: #fed501;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.read a{
+  font-weight: bold;
+}
+.container11{
+  padding: 80px 0;
+}
+.cotcon11{
+ background-color: #333333;
+}
+.error{
+  color: red !important;
+}
+.subscribe{
+  width: 95%;
+  height: 100%;
+  color: gray;
+  padding: 50px  0;
+  margin: 0 auto;
+}
+.subscribe h4{
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: bold;
+}
+.chuainput{
+  width: 470px;
+  display: flex;
+  justify-content: space-between;
+}
+.chuainput label{
+  margin: 0 !important;
+  color: #fed501;
+}
+.chuainput input{
+  width: 95%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.chuainput .valid{
+  color: white !important;
+}
+#sub{
+  width: 135px;
+  height: 35px;
+  border: none;
+  background-color: #fed501;
+  margin-top: 10px;
+}
+.container12{
+  padding: 50px 0;
+  background-image: url("anh/backgr.jpg");
+}
+.cotcon12{
+  display: flex;
+  justify-content: space-between;
+}
+.nutcontact{
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #fed501;
+  line-height: 40px;
+}
+.nutcontact a{
+  text-decoration: none;
+  color: #fed501;
+}
+.cotcon12 h4{
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: bold;
+}
+.container13{
+  background-color: #0f0f0f;
+  padding: 5% 0;
+}
+#logo2{
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  -webkit-animation: myi 800ms infinite;
+  -moz-animation: myi 800ms infinite; 
+  -o-animation: myi 800ms infinite; 
+  animation: myi 800ms infinite;
+}
+.cot2con10 .quick{
+  margin: 0;
+  font-size: 23px;
+  color: white;
+}
+.cot2con10 .chuamenu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.vach{
+  width: 60px;
+  height: 2px;
+  background-color: #fed501;
+}
+.ul10{
+  margin-top: 5%;
+}
+.ul10 .aa{
+  color: #c5c5c5;
+  text-decoration: none;
+  font-size: 14px;
+}
+.ul10 li{
+  color: #c5c5c5 !important;
+}
+.ul10 i{
+  margin-right: 5px;
+}
+.cot2con10 li{
+  padding-top: 10px;
+  color: white;
+}
+@-webkit-keyframes myi {
+ 0% { color: white; } 
+ 50% { color: #fed501;  } 
+ 100% { color: white;  } 
+}
+@-moz-keyframes myi { 
+ 0% { color: white;  } 
+ 50% { color: #fed501;  }
+ 100% { color: white;  } 
+}
+@-o-keyframes myi { 
+ 0% { color: white; } 
+ 50% { color: #fed501; } 
+ 100% { color: white;  } 
+}
+@keyframes myi { 
+ 0% { color:white ; } 
+ 50% { color: #fed501;  }
+ 100% { color: white;  } 
+} 
+.cot1con10{
+  width: 100%;
+}
+.cot1con10 .pcon10{
+  color: #c5c5c5;
+}
+.dcon10{
+  color: #c5c5c5;
+  text-align: center;
+  border: 1.5px solid #c5c5c5;
+  border-radius: 30px;
+  font-size: 18px;
+  float: left;
+  width: 40px ;
+  margin-left: 3%;
+  line-height: 40px;
+  height: 40px;
+}
+.anhfooter{
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.imgft{
+  width: 32%;
+  height: 60px;
+}
+.imgft img{
+  padding-top: 5px;
+  width: 100%;
+  height: 100%;
+}
+.container14{
+  font-size: 13px;
+  width: 100%;
+  height: 60px;
+  color: white;
+  line-height: 60px;
+  background-color: #0c0c0c;
+  text-align: center;
+}
+@media screen and (min-width:768px) and (max-width: 991px){
+  .container1{
+    display: none;
+  }
+  .icon{
+    display: none;
+  }
+  .quote{
+    display: none;
+  }
+  .container2{
+    background-color:#fed501;
+  }
+  .ctn{
+    position: relative;
+  }
+  #navbarResponsive{
+    background-color: #fed501;
+    text-align: center;
+    width: 30%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+  .home{
+    position: relative;
+  }
+  .home:hover #menuc3{
+    display: block !important;
+  }
+  .menuc3{
+    background-color: #fed501;
+    width: 150px;
+    left: -150px;
+    top: 10px;
+    height: 100px;
+    line-height: 30px;
+    position: static;
+    text-decoration: none; 
+    }.home11{
+      position: relative;
+    }
+    .home11:hover #menuc31{
+      display: block !important;
+    }
+    .menuc31{
+      /*  display: none !important;*/
+      background-color: #fed501;
+      width: 150px;
+      left: -150px;
+      top: 10px;
+      height: 100px;
+      line-height: 30px;
+      position: static;
+      text-decoration: none; 
+    }
+    .navbar-toggler{
+      margin-left: 300px;
+    }
+    #navbarResponsive ul{
+      width: 100% !important;
+    }
+    #navbarResponsive ul li a{
+      color: white !important;
+      width: 100%;
+      height: 40px;
+      border: 2px solid orange;
+      margin: -1px 0;
+    }
+    .shop span{
+      background-color: white;
+    }
+    .lic3 .c3:hover{
+      background-color: #fed501 !important;
+    }
+    .lic3:hover{
+      background-color: #fed501;
+    }
+    .c3{
+      border: none !important;
+    }
+    .buildcos{
+      font-size: 20px;
+    }
+    .chuto h2{
+      font-size: 30px;
+    }
+    .chuavitri {
+      width: 80%;
+      height: 100px;
+      display: flex;
+    }
+    .ttvitri h6 {
+      font-size: 11px;
+      font-weight: bold;
+    }
+    .ttvitri span {
+      font-size: 12px;
+      color: gray;
+    }
+    .chuangonngu{
+      display: none;
+    }
+    .iconvitri{
+      margin-left: 15px !important;
+    }
+    .iconvitri i {
+      font-size: 20px;
+      color: #fed501;
+    }
+    .ttvitri {
+      padding-left: 10px;
+      width: 90%;
+      height: 100px;
+      padding-top: 25px;
+    }
+    .welcome{
+      width: 100%;
+      left: 7%;
+    }
+    .play{
+      display: none;
+    }
+    .noidungcon5{
+      width: 100%;
+      height: 130px;
+    }
+    .filtr-item {
+      padding-top: 25px;
+      width: 100%;
+      height: 250px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cot1con10{
+      width: 70%;
+    }
+    .anhfooter {
+      margin-top: 25px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .quick{
+      margin-top: 15px !important;
+      font-size: 17px !important;
+    }
+    .cot2con10 li {
+      padding-top: 4px;
+      color: white;
+    }
+    .filtr-item {
+      margin-top: 10px;
+      padding:5px;
+      width: 100%;
+      height: 230px;
+      position: relative;
+      overflow: hidden;
+    }
+    figure.snip1477 {
+      font-family: 'Raleway', Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      color: #ffffff;
+      text-align: center;
+      font-size: 16px;
+      background-color: #000000;
+    }
+    .imgft {
+      width: 32%;
+      height: 75px;
+    }
+    video{
+      width: 100%;
+    }
+  }
+  @media screen and (min-width:576px) and (max-width: 768px){
+    #logo img{
+      width: 30px;
+      height: 30px;
+    } 
+    .welcome h1{
+      font-size: 22px;
+    }
+    .welcome span {
+      font-size: 22px;
+      font-weight: bold;
+      color: #fed501;
+      font-family: 'Chakra Petch', sans-serif;
+    }
+    .w-100 {
+      width: 100% !important;
+      height: 400px;
+    }
+    .textwelcome{
+      font-size: 13px;
+    }
+    .ctn{
+      height: 50px;
+      position: relative;
+    }
+    .quote{
+      display: none;
+    }
+    .container1{
+      display: none;
+    }
+    #logo{
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 20px;
+    }
+    .navbar-toggler {
+      margin-left: 230px !important;
+      padding: 4px;
+    }
+    .navbar-light .navbar-toggler-icon {
+      font-size: 15px;
+    }
+    .icon{
+      display: none;
+    }
+    .shop {
+      width: 33px;
+      height: 30px;
+      position: relative;
+    }
+    .shop i {
+      font-size: 21px;
+      padding-top: 36px;
+    }
+    .shop span{
+      width: 20px;
+      background-color: white;
+    }
+    .shop div{
+      top: 28px;
+    }
+    .search i {
+      margin-left: 10px;
+      font-size: 20px;
+      padding-top: 12px;
+    }
+    .container2{
+      background-color:#fed501;
+    }
+    .container3 {
+    }
+    .chuangonngu{
+      display: none;
+    }
+    .chuavitri{
+      width: 80%;
+    }
+    .iconvitri{
+      margin-left: 15px !important;
+    }
+    .iconvitri i {
+      font-size: 17px;
+      color: #fed501;
+    }
+    .ttvitri {
+      padding-left: 10px;
+      width: 90%;
+      height: 100px;
+      padding-top: 25px;
+    }
+    .ttvitri h6 {
+      font-size: 9px;
+      font-weight: bold;
+    }
+    .ttvitri span {
+      font-size: 12px;
+      color: gray;
+    }
+    .aboutus{
+      font-size: 30px;
+    } 
+    .progress-wrap {
+      position: fixed;
+      right: 40px;
+      bottom: 40px;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+      display: block;
+    }
+    .progress-wrap::after {
+      position: absolute;
+      font-family: 'unicons';
+      content: '\e84b';
+      text-align: center;
+      line-height: 40px;
+      font-size: 22px;
+      color: #fd8620;
+      left: 0;
+      top: 0;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+      display: block;
+      z-index: 1;
+    }
+    .progress-wrap::before {
+      position: absolute;
+      font-family: 'unicons';
+      content: '\e84b';
+      text-align: center;
+      line-height: 40px;
+      font-size: 22px;
+      opacity: 0;
+      background: #fd8620;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      left: 0;
+      top: 0;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+      display: block;
+      z-index: 2;
+    }
+    #navbarResponsive{
+      background-color: #fed501;
+      text-align: center;
+      width: 30%;
+      position: absolute;
+      top: 100%;
+      right: 0;
+    }
+    .home{
+      position: relative;
+    }
+    .home:hover #menuc3{
+      display: block !important;
+    }
+    .menuc3{
+      /*  display: none !important;*/
+      background-color: #fed501;
+      width: 150px;
+      left: -150px;
+      top: 10px;
+      height: 100px;
+      line-height: 30px;
+      position: static;
+      text-decoration: none; 
+      }.home11{
+        position: relative;
+      }
+      .home11:hover #menuc31{
+        display: block !important;
+      }
+      .menuc31{
+        /*  display: none !important;*/
+        background-color: #fed501;
+        width: 150px;
+        left: -150px;
+        top: 10px;
+        height: 100px;
+        line-height: 30px;
+        position: static;
+        text-decoration: none; 
+      }
+      .navbar-toggler{
+        margin-left: 300px;
+      }
+      #navbarResponsive ul{
+        width: 100% !important;
+      }
+      #navbarResponsive ul li a{
+        color: white !important;
+        width: 100%;
+        height: 40px;
+        border: 2px solid orange;
+        margin: -1px 0;
+      }
+      .lic3 .c3:hover{
+        background-color: #fed501 !important;
+      }
+      .lic3:hover{
+        background-color: #fed501;
+      }
+      .c3{
+        border: none !important;
+      }
+      .buildcos{
+        font-size: 20px;
+      }
+      .play{
+        display: none;
+      }
+      .filtr-item {
+        margin-top: 10px;
+        padding:5px;
+        width: 100%;
+        height: 230px;
+        position: relative;
+        overflow: hidden;
+      }
+      figure.snip1477 {
+        font-family: 'Raleway', Arial, sans-serif;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+        background-color: #000000;
+      }
+      .imgft {
+        width: 32%;
+        height: 75px;
+      }
+      .nutcontact{
+        width: 120px;
+      }
+      .cotcon12 h4{
+        font-size: 15px;
+      }
+      .arrow-down{
+        margin: auto;
+      }
+      .anhcon9{
+        margin: auto;
+      }
+      video{
+        width:100%; 
+      }
+      .ourkey h2{
+        font-size: 30px;
+      }
+      .cot1con10{
+        width: 70%;
+      }
+      .quick{
+        font-size: 17px !important;
+      }
+      .cot2con10 li {
+        padding-top: 4px;
+        color: white;
+      }
+      #logo2 {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        -webkit-animation: myi 800ms infinite;
+        -moz-animation: myi 800ms infinite;
+        -o-animation: myi 800ms infinite;
+        animation: myi 800ms infinite;
+      }
+      #logo2 img{
+        width: 30px;
+        height: 30px;
+      }
+      .pcon10{
+        font-size: 14px;
+      }
+      .dcon10 {
+        color: #c5c5c5;
+        text-align: center;
+        border: 1.5px solid #c5c5c5;
+        border-radius: 30px;
+        font-size: 12px;
+        float: left;
+        width: 35px;
+        margin-left: 3%;
+        line-height: 35px;
+        height: 35px;
+      }
+      .cot2con10 .quick {
+        padding: 0 !important;
+        margin-top: 10px;
+        font-size: 23px;
+        color: white;
+      }
+      .vach {
+        width: 40px;
+        height: 2px;
+        background-color: #fed501;
+      }
+      .ul10 {
+        margin-top: 7%;
+      }
+      .cot2con10 li {
+        padding-top: 0px;
+        color: white;
+        font-size: 15px;
+      }
+    }
+    @media screen and (min-width:320px ) and (max-width: 575px){
+     #logo img{
+      width: 30px;
+      height: 30px;
+    } 
+    .welcome h1{
+      font-size: 18px;
+    }
+    .cotcon12 {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+    .chuainput input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+    .welcome span {
+      font-size: 16px;
+      font-weight: bold;
+      color: #fed501;
+      font-family: 'Chakra Petch', sans-serif;
+    }
+    .ulfilter li {
+      display: inline-block;
+      cursor: pointer;
+      color: white;
+      font-size: 12px;
+      padding: 7px;
+    }
+    .w-100 {
+      width: 100% !important;
+      height: 300px;
+    }
+    .textwelcome{
+      font-size: 11px;
+    }
+    .ctn{
+      height: 50px;
+      position: relative;
+    }
+    .quote{
+      display: none;
+    }
+    .container1{
+      display: none;
+    }
+    #logo{
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 20px;
+    }
+    .navbar-toggler {
+      position: absolute;
+      right: 20px;
+      padding: 4px;
+    }
+    .navbar-light .navbar-toggler-icon {
+      font-size: 15px;
+    }
+    .icon{
+      display: none;
+    }
+    .shop {
+      width: 33px;
+      height: 30px;
+      position: relative;
+    }
+    .shop i {
+      font-size: 21px;
+      padding-top: 36px;
+    }
+    .shop span{
+      width: 20px;
+      background-color: white;
+    }
+    .shop div{
+      top: 28px;
+    }
+    .search i {
+      margin-left: 10px;
+      font-size: 20px;
+      padding-top: 12px;
+    }
+    .container2{
+      background-color:#fed501;
+    }
+    .container3 {
+      display: none;
+    }
+    .container4{
+      padding: 30px 0;
+    }
+    .chuangonngu{
+      display: none;
+    }
+    .chuavitri{
+      width: 80%;
+    }
+    .iconvitri{
+      margin-left: 15px !important;
+    }
+    .iconvitri i {
+      font-size: 17px;
+      color: #fed501;
+    }
+    .ttvitri {
+      padding-left: 10px;
+      width: 90%;
+      height: 100px;
+      padding-top: 25px;
+    }
+    .ttvitri h6 {
+      font-size: 9px;
+      font-weight: bold;
+    }
+    .ttvitri span {
+      font-size: 12px;
+      color: gray;
+    }
+    .aboutus{
+      font-size: 30px;
+    } 
+    .progress-wrap {
+      position: fixed;
+      right: 40px;
+      bottom: 40px;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+      display: block;
+    }
+    .progress-wrap::after {
+      position: absolute;
+      font-family: 'unicons';
+      content: '\e84b';
+      text-align: center;
+      line-height: 40px;
+      font-size: 22px;
+      color: #fd8620;
+      left: 0;
+      top: 0;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+      display: block;
+      z-index: 1;
+    }
+    .progress-wrap::before {
+      position: absolute;
+      font-family: 'unicons';
+      content: '\e84b';
+      text-align: center;
+      line-height: 40px;
+      font-size: 22px;
+      opacity: 0;
+      background: #fd8620;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      left: 0;
+      top: 0;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+      display: block;
+      z-index: 2;
+    }
+    #navbarResponsive{
+      background-color: #fed501;
+      text-align: center;
+      width: 50%;
+      position: absolute;
+      top: 100%;
+      right: 0;
+    }
+    .home{
+      position: relative;
+    }
+    .home:hover #menuc3{
+      display: block !important;
+    }
+    .menuc3{
+      /*  display: none !important;*/
+      background-color: #fed501;
+      width: 150px;
+      left: -150px;
+      top: 10px;
+      height: 100px;
+      line-height: 30px;
+      position: static;
+      text-decoration: none; 
+      }.home11{
+        position: relative;
+      }
+      .home11:hover #menuc31{
+        display: block !important;
+      }
+      .menuc31{
+        /*  display: none !important;*/
+        background-color: #fed501;
+        width: 150px;
+        left: -150px;
+        top: 10px;
+        height: 100px;
+        line-height: 30px;
+        position: static;
+        text-decoration: none; 
+      }
+      .view{
+        width: 120px;
+        height: 35px;
+        line-height: 35px;
+      }
+      .view a{
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .container5{
+        padding: 10px 0;
+      }
+      .buildcos2{
+        font-size: 18px;
+        width: 200px;
+      }
+      .vachngan{
+        top: 45%;
+      }
+      .vachdai{
+        bottom: 5px;
+      }
+      .textcon7{
+        width: 100%;
+      }
+      .explore h2{
+        font-size: 18px;
+      }
+      .dream h2{
+        font-size: 18px;
+      }
+      .navbar-toggler{
+        margin-left: 300px;
+      }
+      #navbarResponsive ul{
+        width: 100% !important;
+      }
+      #navbarResponsive ul li a{
+        color: white !important;
+        width: 100%;
+        height: 40px;
+        border: 2px solid orange;
+        margin: -1px 0;
+      }
+      .lic3 .c3:hover{
+        background-color: #fed501 !important;
+      }
+      .lic3:hover{
+        background-color: #fed501;
+      }
+      .c3{
+        border: none !important;
+      }
+      .buildcos{
+        font-size: 20px;
+      }
+      .play{
+        display: none;
+      }
+      .huypd{
+        padding: 0 !important;
+      }
+      .filtr-item {
+        margin-top: 10px;
+        padding:5px;
+        width: 100%;
+        height: 230px;
+        position: relative;
+        overflow: hidden;
+      }
+      .chuainput {
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+      }
+      .coninput{
+        width: 100%;
+      }
+      figure.snip1477 {
+        font-family: 'Raleway', Arial, sans-serif;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+        background-color: #000000;
+      }
+      .imgft {
+        width: 32%;
+        height: 75px;
+      }
+      .nutcontact{
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .cotcon12 h4{
+        font-size: 10px;
+      }
+      .arrow-down{
+        margin: auto;
+      }
+      .anhcon9{
+        margin: auto;
+      }
+      video{
+        width:100%; 
+      }
+      .ourkey h2{
+        font-size: 25px;
+      }
+      .ourkey a{
+        font-size: 13px;
+      }
+      .cot1con10{
+        width: 100%;
+      }
+      .cot2con10 .chuamenu {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .divchuaicon{
+        width: 160px;
+        margin: 0 auto;
+      }
+      .chuaview{
+        width: 100%;
+      }
+      .quick{
+        font-size: 17px !important;
+      }
+      .cot2con10 li {
+        padding-top: 4px;
+        color: white;
+      }
+      #logo2 {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        -webkit-animation: myi 800ms infinite;
+        -moz-animation: myi 800ms infinite;
+        -o-animation: myi 800ms infinite;
+        animation: myi 800ms infinite;
+      }
+      #logo2 img{
+        width: 30px;
+        height: 30px;
+      }
+      .pcon10{
+        text-align: center;
+        font-size: 14px;
+      }
+      .hangdau{
+        text-align: center;
+      }
+      .dcon10 {
+        color: #c5c5c5;
+        text-align: center;
+        border: 1.5px solid #c5c5c5;
+        border-radius: 30px;
+        font-size: 12px;
+        float: left;
+        width: 35px;
+        margin-left: 3%;
+        line-height: 35px;
+        height: 35px;
+      }
+      .cot2con10 .quick {
+        text-align: center;
+        padding: 0 !important;
+        margin-top: 10px;
+        font-size: 23px;
+        color: white;
+      }
+      .vach {
+        margin: auto;
+        width: 40px;
+        height: 2px;
+        background-color: #fed501;
+      }
+      .ul10 {
+        width: 100%;
+        text-align: center;
+      }
+      .cot2con10 li {
+        padding-top: 0px;
+        color: white;
+        font-size: 15px;
+      }
+      .container14{
+        font-size: 10px;
+      }
+    }
+    @media screen and (min-width: 320px) and (max-width: 400px){
+      .ulfilter li {
+        display: inline-block;
+        cursor: pointer;
+        color: white;
+        font-size: 10px;
+        padding: 5px;
+      }
+
+    }

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SERVICE</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="service.css">
+	<link href="AOS/aos.css" rel="stylesheet">
+	<script src="AOS/aos.js"></script>
+	<script type="text/javascript">
+		$(window).on("load",function(){
+				$(".loadto").fadeOut(2000);
+			})
+		$(document).ready(function(){
+			$('.menuc3').slideUp();
+			$(".home").on("click",function(){
+				$(".home .menuc3").slideToggle("200");
+			})
+			$('.menuc31').slideUp();
+			$(".home11").on("click",function(){
+				$(".home11 .menuc31").slideToggle("200");
+			})
+			var progressPath = document.querySelector('.progress-wrap path');
+				var pathLength = progressPath.getTotalLength();
+
+				progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+				progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+				progressPath.style.strokeDashoffset = pathLength;
+				progressPath.getBoundingClientRect();
+				progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+
+				var updateProgress = function() {
+					var scroll = $(window).scrollTop();
+					var height = $(document).height() - $(window).height();
+					var progress = pathLength - (scroll * pathLength / height);
+					progressPath.style.strokeDashoffset = progress;
+				}
+
+				updateProgress();
+				$(window).scroll(updateProgress);
+
+				var offset = 50;
+				var duration = 550;
+
+				jQuery(window).on('scroll', function() {
+					if(jQuery(this).scrollTop() > offset) {
+						jQuery('.progress-wrap').addClass('active-progress');
+					} else {
+						jQuery('.progress-wrap').removeClass('active-progress');
+					}
+				});
+
+				jQuery('.progress-wrap').on('click', function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+	</script>
+</head>
+<body>
+	<div class="loadto">
+		<div class="load"></div>
+	</div>
+	<div class="container-fluid container1" style="border-bottom: 1px solid #e5e5e5">
+		<div class="container">
+			<div class="row hang1">
+				<div class="col-4 col-sm-4 col-md-4 col-xl-4 col-lg-4">
+					<div id="icon1">
+						<i style="color: #fed501;" class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter twitter"></i>
+						<i class="fab fa-linkedin-in in"></i>
+						<i class="fab fa-pinterest-p pin"></i>
+					</div>
+				</div>
+				<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon">
+					<div class="icon2"><i class="far fa-clock"></i>Mon-Sat 7:00-18:00</div>
+				</div>
+				<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 icon" style="padding:0">
+					<div class="icon2"><i class="fas fa-phone-alt"></i>(205)-509-1845</div>
+				</div>
+				<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon">
+					<div class="icon2"><i class="fas fa-envelope"></i>buixuanxep@gmail.com</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-dropdown navbar-expand-lg navbar-light sticky-top">
+		<div class="container-fluid container2">	
+			<div class="container ctn">
+				<a class="navbar-branch" id="logo" href="index.html">
+					<img src="anh/—Pngtree—real estate logo_4103471.png" width="60px" height="60px" alt="">CONSTRAU
+				</a>
+				<button class="navbar-toggler" type="button" aria-expaned="false" aria-lable="Toggle navigation" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav m-lg-auto" style="display: flex;justify-content: space-between;width: 90%">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">HOME</a>		
+						</li>
+						<li class="nav-item home">
+							<a class="nav-link">MORE<i style="margin-left: 3px" class="fas fa-caret-down"></i></a>
+							<ul class="menuc3">
+									<li class="lic3"><i class="fas fa-caret-right muiten"></i><a class="c3" href="about.html">ABOUT</a></li>
+									<li class="lic3"><i class="fas fa-caret-right muiten"></i><a class="c3" href="team.html">TEAM</a></li>
+									<li class="lic3"><i class="fas fa-caret-right muiten"></i><a class="c3" href="career.html">CAREERS</a></li>
+								</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="service.html">SERVICES</a>
+						</li>
+						<li class="nav-item home11">
+							<a class="nav-link">BLOG<i style="margin-left: 3px" class="fas fa-caret-down"></i></a>
+							
+							<ul class="menuc31">
+								<li class="lic3"><i class="fas fa-caret-right muiten"></i><a class="c3" href="bloggrid.html">BLOG GRID</a></li>
+								<li class="lic3"><i class="fas fa-caret-right muiten"></i><a class="c3" href="blogdetail.html">BLOG DETAIL</a></li>
+								<li class="lic3"><i class="fas fa-caret-right muiten"></i><a class="c3" href="#">HELLO WOLRD</a></li>
+							</ul>
+							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">PROJECTS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">CONTACT US</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">SHOP</a>
+						</li>
+					</ul>
+
+				</div>
+				<div class="chuaicon">
+					<div class="shop">
+						<i class="fas fa-shopping-bag"></i>
+						<span>0</span>
+					</div>
+				<div class="search">
+					<i class="fas fa-search"></i>
+				</div>
+				</div>
+				
+			</div>	
+		</div>
+	</nav>	
+	<div class="container-fluid container3">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 aboutus  animate__animated animate__backInDown">
+				SERVICES V2
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 home1 animate__animated animate__bounceIn" >
+				<i class="fas fa-home" style="margin-right: 3px"></i>Home > <span>Services V2</span>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid container4">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-xl-4 col-md-6 cot" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+					<div class="concot">
+						<img src="anh/design-tools.png" alt="">
+						<div class="noidung">
+							<h4>DESIGN/BUILD</h4>
+							<p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt.</p>
+							<div class="connd">
+								<a href="">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xl-4 col-md-6 cot" data-aos="fade-up"
+     data-aos-duration="1500">
+					<div class="concot">
+							<img src="anh/bridge.png" alt="">
+						<div class="noidung">
+							<h4>BRIDGE CONSTRUCTION</h4>
+							<p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt.</p>
+							<div class="connd">
+								<a href="">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xl-4 col-md-6 cot" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+					<div class="concot">
+							<img src="anh/wrench.png" alt="">					
+						<div class="noidung">
+							<h4>RENOVATION & EXPANSION</h4>
+							<p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt.</p>
+							<div class="connd">
+								<a href="">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xl-4 col-md-6 cot" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+					<div class="concot">
+							<img src="anh/spray.png" alt="">
+						<div class="noidung">
+							<h4>OIL & GAS ENERGY</h4>
+							<p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt.</p>
+							<div class="connd">
+								<a href="">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xl-4 col-md-6 cot" data-aos="fade-up"
+     data-aos-duration="1500">
+					<div class="concot">
+							<img src="anh/worker.png" alt="">
+						<div class="noidung">
+							<h4>CONSTRUCTION CONSULTANT</h4>
+							<p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt.</p>
+							<div class="connd">
+								<a href="#">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xl-4 col-md-6 cot" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+					<div class="concot">
+							<img src="anh/office-building.png" alt="">
+						<div class="noidung">
+							<h4>SOCIAL INFRASTRUCTURE</h4>
+							<p>Duis ac eros rutrum, vehicula lorem nec, scelerisque tellus. Donec volutpat, arcu at molestie tincidunt.</p>
+							<div class="connd">
+								<a href="">LEARN MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid container5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-xl-12 cotcon5" data-aos="fade-up" data-aos-duration="1500">
+					<div class="chuatext">
+						<h2>PIONEERS BUILD THE FUTURE</h2>
+						<p>Buildcos is a leading international infrastructure group.We finance,develop,build and maintain the vital infrastructure that we all depend on.</p>
+						<div class="quote">
+							<a>GET A QUOTE</a>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid container10">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-xl-6 col-md-6 col-12 col-sm-6 hangdau">
+					<div class="cot1con10">
+						<a id="logo2" href="">
+							<img src="anh/—Pngtree—real estate logo_4103471.png" width="60px" height="60px" alt="">CONSTRAU
+						</a>
+						<p class="pcon10">
+							Constrau is a leading international property and infrastructure group, with approximately 13,000 employees.
+						</p>
+						<div class="divchuaicon">
+							<div class="dcon10" style="margin: 0"><i class="fab fa-facebook-f"></i></div>
+							<div class="dcon10"><i class="fab fa-twitter"></i></div>
+							<div class="dcon10"><i class="fab fa-linkedin-in"></i></div>
+							<div class="dcon10"><i class="fab fa-pinterest-p"></i></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-lg-2 col-xl-2 col-md-2 col-12 col-sm-6 cot2con10">
+					<p class="quick">QUICK LINKS</p>
+					<div class="vach"></div>
+					<ul class="ul10">
+						<li><a class="aa" href="#">HOME</a></li>
+						<li><a class="aa" href="#">NETWORKS</a></li>
+						<li><a class="aa" href="#">COMPANY NEWS</a></li>
+						<li><a class="aa" href="#">SERVICES</a></li>
+						<li><a class="aa" href="#">PROJECT</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-xl-2 col-md-2 col-12 col-sm-6 cot2con10">
+					<p class="quick">COMPANY</p>
+					<div class="vach"></div>
+					<ul class="ul10">
+						<li><a class="aa" href="#">SHOP</a></li>
+						<li><a class="aa" href="#">EXPERTISE</a></li>
+						<li><a class="aa" href="#">CAREERS</a></li>
+						<li><a class="aa" href="#">CONTACT US</a></li>
+						<li><a class="aa" href="#">SUSTAINABILITY</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-xl-2 col-md-2 col-12 col-sm-6 cot2con10">
+					<p class="quick">INDUSTRIES</p>
+					<div class="vach"></div>
+					<ul class="ul10">
+						<li><a class="aa" href="#">ELECTRONICS MATERIALS</a></li>
+						<li><a class="aa" href="#">POWER SYSTEMS</a></li>
+						<li><a class="aa" href="#">BUILDING MANAGEMENT</a></li>
+						<li><a class="aa" href="#">GIFTS & APPARE</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid container11">
+		Copyright © 2019 Designed by AuThemes. All rights reserved.
+	</div>
+	<div class="progress-wrap active-progress">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 205.431;"></path>
+		</svg>
+	</div>	
+</body>
+<script type="text/javascript">
+		AOS.init({
+		 	disable:'phone',
+		 	disable:'mobile'
+		 });
+</script>
+</html>
