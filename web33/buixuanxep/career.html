@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CAREER</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="dist/jquery.validate.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="career.css">
+	<link href="AOS/aos.css" rel="stylesheet">
+	<script src="AOS/aos.js"></script>
+	<script type="text/javascript">
+		$(window).on("load",function(){
+				$(".loadto").fadeOut(2000);
+			})
+		$(document).ready(function(){
+			$('.menuc3').slideUp();
+			$(".home").on("click",function(){
+				$(".home .menuc3").slideToggle("200");
+			})
+			$('.menuc31').slideUp();
+			$(".home11").on("click",function(){
+				$(".home11 .menuc31").slideToggle("200");
+			})
+			var progressPath = document.querySelector('.progress-wrap path');
+				var pathLength = progressPath.getTotalLength();
+
+				progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+				progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+				progressPath.style.strokeDashoffset = pathLength;
+				progressPath.getBoundingClientRect();
+				progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+
+				var updateProgress = function() {
+					var scroll = $(window).scrollTop();
+					var height = $(document).height() - $(window).height();
+					var progress = pathLength - (scroll * pathLength / height);
+					progressPath.style.strokeDashoffset = progress;
+				}
+
+				updateProgress();
+				$(window).scroll(updateProgress);
+
+				var offset = 50;
+				var duration = 550;
+
+				jQuery(window).on('scroll', function() {
+					if(jQuery(this).scrollTop() > offset) {
+						jQuery('.progress-wrap').addClass('active-progress');
+					} else {
+						jQuery('.progress-wrap').removeClass('active-progress');
+					}
+				});
+
+				jQuery('.progress-wrap').on('click', function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+	</script>
+</head>
+<body>
+	<div class="loadto">
+		<div class="load"></div>
+	</div>
+	<div class="container-fluid container1" style="border-bottom: 1px solid #e5e5e5">
+		<div class="container">
+			<div class="row hang1">
+				<div class="col-4 col-sm-4 col-md-4 col-xl-4 col-lg-4">
+					<div id="icon1">
+						<i style="color: #fed501;" class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter twitter"></i>
+						<i class="fab fa-linkedin-in in"></i>
+						<i class="fab fa-pinterest-p pin"></i>
+					</div>
+				</div>
+				<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon">
+					<div class="icon2"><i class="far fa-clock"></i>Mon-Sat 7:00-18:00</div>
+				</div>
+				<div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 icon" style="padding:0">
+					<div class="icon2"><i class="fas fa-phone-alt"></i>(205)-509-1845</div>
+				</div>
+				<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon">
+					<div class="icon2"><i class="fas fa-envelope"></i>buixuanxep@gmail.com</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-dropdown navbar-expand-lg navbar-light sticky-top">
+		<div class="container-fluid container2">	
+			<div class="container ctn">
+				<a class="navbar-branch" id="logo" href="index.html">
+					<img src="anh/—Pngtree—real estate logo_4103471.png" width="60px" height="60px" alt="">CONSTRAU
+				</a>
+				<button class="navbar-toggler" type="button" aria-expaned="false" aria-lable="Toggle navigation" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav m-lg-auto" style="display: flex;justify-content: space-between;width: 90%">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">HOME</a>		
+						</li>
+						<li class="nav-item home">
+							<a class="nav-link">MORE<i style="margin-left: 3px" class="fas fa-caret-down"></i></a>
+							<ul class="menuc3">
+									<li class="lic3"><i class="fas fa-caret-right muiten"></i><a class="c3" href="about.html">ABOUT</a></li>
+									<li class="lic3"><i class="fas fa-caret-right muiten"></i><a class="c3" href="team.html">TEAM</a></li>
+									<li class="lic3"><i class="fas fa-caret-right muiten"></i><a class="c3" href="career.html">CAREERS</a></li>
+								</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="service.html">SERVICES</a>
+						</li>
+						<li class="nav-item home11">
+							<a class="nav-link" >BLOG<i style="margin-left: 3px" class="fas fa-caret-down"></i></a>
+							
+							<ul class="menuc31">
+								<li class="lic3"><i class="fas fa-caret-right muiten"></i><a class="c3" href="bloggrid.html">BLOG GRID</a></li>
+								<li class="lic3"><i class="fas fa-caret-right muiten"></i><a class="c3" href="blogdetail.html">BLOG DETAIL</a></li>
+								<li class="lic3"><i class="fas fa-caret-right muiten"></i><a class="c3" href="#">HELLO WOLRD</a></li>
+							</ul>
+							
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" >PROJECTS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">CONTACT US</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">SHOP</a>
+						</li>
+					</ul>
+
+				</div>
+				<div class="chuaicon">
+					<div class="shop">
+						<i class="fas fa-shopping-bag"></i>
+						<span>0</span>
+					</div>
+				<div class="search">
+					<i class="fas fa-search"></i>
+				</div>
+				</div>
+				
+			</div>	
+		</div>
+	</nav>	
+	<div class="container-fluid container3">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 aboutus animate__animated animate__backInUp">
+				CAREERS
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 home1 animate__animated animate__bounceIn" >
+				<i class="fas fa-home" style="margin-right: 3px"></i>Home > <span>Careers</span>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid container4">
+		<div class="container">
+			<div class="row dong1" data-aos="fade-right" data-aos-duration="1500">
+				<div class="col-lg-4 col-xl-4 cot1con4">
+					<img src="anh/bietthu1.jpg" alt="">
+				</div>
+				<div class="col-lg-8 col-xl-8 cot2con4">
+					<div class="textcot2">
+						<h2>Our world and yours, is filled with opportunity.</h2>
+						<p>Buildcos delivers infrastructure on a scale like no other. With clear plans for the future, an uncompromising focus on quality and a pipeline of high-profile programmes and projects.</p>
+						<div class="apply">
+							<a href="#">APLLY NOW</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row dong2">
+				<div class="col-lg-12 col-xl-12 cot1dong2" data-aos="fade-up" data-aos-duration="1500">
+					<div class="textdong2">
+						Career-Oriented Program
+						<div class="vach"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row dong3">
+				<div class="col-lg-7 col-xl-7 cot1dong3" data-aos="fade-down" data-aos-duration="1500">
+					<div class="accordion">
+						<div class="accordion-item">
+							<button class="accordion-header">
+								<strong>OUR VALUES AT BUILDCOS</strong>
+								<div class="bg"><i class="fas fa-angle-down"></i></div>
+							</button>
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque,
+								voluptates minima quod quisquam et quasi debitis officia non illo
+								harum iure eos reprehenderit quaerat, veritatis asperiores facilis qui
+								neque.
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<button class="accordion-header">
+								<strong>WHAT'S IT LIKE TO WORK WITH US ?</strong>
+								<div class="bg"><i class="fas fa-angle-down"></i></div>
+							</button>
+							<div class="accordion-body">
+								Dignissimos perspiciatis amet, qui soluta aliquid, ipsa ea alias
+								quidem officiis vel, inventore quod labore aspernatur exercitationem
+								fugit explicabo rerum dolores quo unde assumenda reprehenderit vero
+								temporibus? Magni, nesciunt vero?
+							</div>
+						</div>
+						<div class="accordion-item">
+							<button class="accordion-header">
+								<strong>DEVELOP YOUR EXPERTISE</strong>
+								<div class="bg"><i class="fas fa-angle-down"></i></div>
+							</button>
+							<div class="accordion-body">
+								Amet fuga ipsum velit, quae illo doloremque? Id quidem harum placeat
+								porro ipsam, animi voluptatem vel mollitia, quae rerum suscipit modi
+								at consequatur ipsum vitae cum aspernatur itaque non quam?
+							</div>
+						</div>
+						<div class="accordion-item">
+							<button class="accordion-header">
+								<strong>A PLACE TO PROGRESS</strong>
+								<div class="bg"><i class="fas fa-angle-down"></i></div>
+							</button>
+							<div class="accordion-body">
+								Nihil consectetur ipsum nobis eligendi facilis sed corrupti, ab fugit
+								ducimus dolorem rem nulla excepturi impedit sint ea, eveniet provident
+								quos repudiandae a quas reiciendis aut, incidunt corporis? Laboriosam,
+								labore.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-xl-5 cot2dong3" data-aos="fade-up" data-aos-duration="1500">
+					<div class="textcot2dong3">
+						<i class="fa fa-circle" aria-hidden="true"></i>
+						<span>We're always looking for a range of talented people to join our expert teams. Currently, we're particularly looking for the set of skills and experience listed below.</span>
+					</div>
+					<div class="textcot2dong3">
+						<i class="fa fa-circle" aria-hidden="true"></i>
+						<span>Commercial professionals and Quantity Surveyors are at the heart of every project we deliver, building strong relationships with customers, upholding our commitment to quality.</span>
+					</div>
+					<div class="textcot2dong3">
+						<i class="fa fa-circle" aria-hidden="true"></i>
+						<span>Your career development will always be our focus. Working in an environment designed to help you thrive, our learning and development tools are second-to-none.</span>
+					</div>
+					<div class="textcot2dong3">
+						<i class="fa fa-circle" aria-hidden="true"></i>
+						<span>By investing in upfront scoping and quality engineering design, we deliver the vital utility infrastructure essential to modern life.</span>
+					</div>
+				</div>
+			</div>
+			<div class="row dong4">
+				<div class="col-lg-12 col-xl-12 cot1dong2">
+					<div class="textdong2">
+						Open Positions
+						<div class="vach"></div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-xl-12">
+					<div class="slai">
+						<div class="chuaslide owl-carousel owl-theme">
+							<div class="conslide item">
+								<img class="d-block w-100" src="anh/anh2.jpg" alt="First slide">
+								<div class="textconslide">
+									<div>
+										<p>ENVIRONMENTAL TECHNOLOGY</p>
+										<span>Experience Required</span>
+									</div>
+									
+								</div>
+								<div class="textcon2slide">
+									<div>Nulla facilisi. Phasellus suscipit ac orci et suscipit. Suspendisse ultrices, nibh vitae lacinia.</div>
+								</div>
+							</div>
+							<div class="conslide item">
+								<img class="d-block w-100" src="anh/anh1.jpg" alt="First slide">
+								<div class="textconslide">
+									<div>
+										<p>ENGINEERING AND MAFUFACTURING</p>
+										<span>High Salary</span>
+									</div>
+									
+								</div>
+								<div class="textcon2slide">
+									<div>Nulla facilisi. Phasellus suscipit ac orci et suscipit. Suspendisse ultrices, nibh vitae lacinia.</div>
+								</div>
+							</div>
+							<div class="conslide item">
+								<img class="d-block w-100" src="anh/quan-ly-du-an-xay-dung.jpg" alt="First slide">
+								<div class="textconslide">
+									<div>
+										<p>CONSTRUCTION MANAGEMENT</p>
+										<span>Experience Required</span>
+									</div>
+									
+								</div>
+								<div class="textcon2slide">
+									<div>Nulla facilisi. Phasellus suscipit ac orci et suscipit. Suspendisse ultrices, nibh vitae lacinia.</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid container5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-xl-12" data-aos="fade-zoom-in"
+				data-aos-easing="ease-in-back"
+				data-aos-delay="300"
+				data-aos-offset="0">
+				<div class="working">
+					<div class="textdong1">
+						<span>Working With Us</span>
+							<div class="dongke">
+								<div class="vachngan"></div>
+								<div class="vachdai"></div>
+							</div>				
+						</div>
+						<h4>WHERE YOUR DREAMS ARE BUILT</h4>
+						<p>If you have had the experience, we have had great opportunities to develop and develop your career.</p>
+						<div class="nutbam">
+							<a href="">SEE MORE JOB OPPOTUNITIES</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid container6">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-xl-12">
+					<div class="textdong1">
+							<h4>CONTACT US</h4>
+							<div class="dongke">
+								<div class="vachngan"></div>
+								<div class="vachdai"></div>
+							</div>				
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-9 col-xl-9 cot1con6" data-aos="flip-left"
+					data-aos-easing="ease-out-cubic"
+					data-aos-duration="1200">
+					<div class="hang1contact">All or submit our online form to request an estimate or for general questions about U.S. Certified Contractors and our services. We look forward to serving you!
+					</div>
+					<form method="get" accept-charset="utf-8" id="formDemo">
+						<fieldset>
+							<div class="hoten">
+								<label>First Name<span class="red">*</span></label><br>
+								<input name="ho" tabindex="1" type="text" placeholder="Please enter Fisrt Name" required id="ho">
+							</div>
+							<div class="hoten">
+								<label>Last Name<span class="red">*</span></label><br>
+								<input name="ten" tabindex="2" type="text" placeholder="Please enter Last Name" required id="ten">
+							</div>
+							<div class="town">
+								<div class="city">
+									<label>Town/City<span class="red"></span></label><br>
+									<input type="text" name="city" tabindex="3" required id="city">
+								</div>
+								<div class="city">
+									 <label>State<span class="red"></span></label><br>
+									 <select name="state" tabindex="4" required id="state">
+									 	<option value="volvo">Ha Noi</option>
+									 	<option value="saab">Hai Phong</option>
+									 	<option value="fiat">Ho Chi Minh</option>
+									 	<option value="audi">Dong Nai</option>
+									 </select>
+									</div>
+								<div class="city">
+									<label>Address<span class="red"></span></label><br>
+									<input type="text" name="address" tabindex="3" required id="address">
+								</div>
+								<div class="city">
+									 <label>Zip Code<span class="red"></span></label><br>
+									<input type="number" name="zip" tabindex="3" required id="zip">
+								</div>			
+							</div>
+									
+							<div class="hoten">
+								<label>Your Email<span class="red">*</span></label><br>
+								<input id="email" name="email" tabindex="5" type="email" placeholder="Please Enter your email" required>
+							</div>
+							<div class="hoten">
+								<label>Your Phone<span class="red">*</span></label><br>
+								<input name="phone" tabindex="5" type="number" placeholder="Please enter your phone" required id="phone">
+							</div>
+							<div class="sub">
+								<label>Subject<span class="red">*</span></label><br>
+								<input name="subject" tabindex="5" type="text" required id="subject">
+							</div>
+							<div class="com">
+								<label>About You</label><br>
+								<textarea name="message" tabindex="6" id="comment" required aria-invalid="true"></textarea>
+							</div>
+							<input type="submit" name="button" value="SEND MESSAGE" id="button">
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-xl-3 col-lg-3 cot2con6">
+					<div class="textcot2con6">
+						<p>Location</p>
+						<div class="vach"></div>
+						<span>34 Steuben St, Brooklyn, NY 11205</span>
+						<span>407 St John St Islington, London</span>
+						<span>116 Rue Saint-Denis, 75002 Paris</span>
+					</div>
+					<div class="textcot2con6">
+						<p>Contact info</p>
+						<div class="vach"></div>
+						<span>(205)-509-1845</span>
+						<span>buixuanxep@gmail.com</span>
+						<span>contact@constrau.com</span>
+					</div>
+					<div class="bando">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2447.774212257245!2d105.93217111443084!3d21.00450496112462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1svi!2s!4v1613733313747!5m2!1svi!2s" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid container10">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-xl-6 col-md-6 col-12 col-sm-6 hangdau">
+					<div class="cot1con10">
+						<a id="logo2" href="">
+							<img src="anh/—Pngtree—real estate logo_4103471.png" width="60px" height="60px" alt="">CONSTRAU
+						</a>
+						<p class="pcon10">
+							Constrau is a leading international property and infrastructure group, with approximately 13,000 employees.
+						</p>
+						<div class="divchuaicon">
+							<div class="dcon10" style="margin: 0"><i class="fab fa-facebook-f"></i></div>
+							<div class="dcon10"><i class="fab fa-twitter"></i></div>
+							<div class="dcon10"><i class="fab fa-linkedin-in"></i></div>
+							<div class="dcon10"><i class="fab fa-pinterest-p"></i></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-lg-2 col-xl-2 col-md-2 col-12 col-sm-6 cot2con10">
+					<p class="quick">QUICK LINKS</p>
+					<div class="vach"></div>
+					<ul class="ul10">
+						<li><a class="aa" href="#">HOME</a></li>
+						<li><a class="aa" href="#">NETWORKS</a></li>
+						<li><a class="aa" href="#">COMPANY NEWS</a></li>
+						<li><a class="aa" href="#">SERVICES</a></li>
+						<li><a class="aa" href="#">PROJECT</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-xl-2 col-md-2 col-12 col-sm-6 cot2con10">
+					<p class="quick">COMPANY</p>
+					<div class="vach"></div>
+					<ul class="ul10">
+						<li><a class="aa" href="#">SHOP</a></li>
+						<li><a class="aa" href="#">EXPERTISE</a></li>
+						<li><a class="aa" href="#">CAREERS</a></li>
+						<li><a class="aa" href="#">CONTACT US</a></li>
+						<li><a class="aa" href="#">SUSTAINABILITY</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-xl-2 col-md-2 col-12 col-sm-6 cot2con10">
+					<p class="quick">INDUSTRIES</p>
+					<div class="vach"></div>
+					<ul class="ul10">
+						<li><a class="aa" href="#">ELECTRONICS MATERIALS</a></li>
+						<li><a class="aa" href="#">POWER SYSTEMS</a></li>
+						<li><a class="aa" href="#">BUILDING MANAGEMENT</a></li>
+						<li><a class="aa" href="#">GIFTS & APPARE</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid container11">
+		Copyright © 2019 Designed by AuThemes. All rights reserved.
+	</div>
+	<div class="progress-wrap active-progress">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 205.431;"></path>
+		</svg>
+	</div>	
+</body>
+<script>
+	const acc_btns = document.querySelectorAll(".accordion-header");
+	const acc_contents = document.querySelectorAll(".accordion-body");
+
+	acc_btns.forEach((btn) => {
+		btn.addEventListener("click", (e) => {
+			acc_contents.forEach((acc) => {
+				if (
+					e.target.nextElementSibling !== acc &&
+					acc.classList.contains("active")
+					) {
+					acc.classList.remove("active");
+				acc_btns.forEach((btn) => btn.classList.remove("active"));
+			}
+		});
+
+			const panel = btn.nextElementSibling;
+			panel.classList.toggle("active");
+			btn.classList.toggle("active");
+		});
+	});
+
+	window.onclick = (e) => {
+		if (!e.target.matches(".accordion-header")) {
+			acc_btns.forEach((btn) => btn.classList.remove("active"));
+			acc_contents.forEach((acc) => acc.classList.remove("active"));
+		}
+	};
+	
+</script>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+	AOS.init({
+		 	disable:'phone',
+		 	disable:'mobile'
+		 });
+	$(document).ready(function() {
+       $("#formDemo").submit(function(event){
+			event.preventDefault();
+			swal(
+          'Good job !',
+          'Thank you very so much',
+          'success'
+        )
+			$("#ho").val('');
+			$("#ten").val('');
+			$("#email").val('');
+			$("#city").val('');
+			$("#zip").val('');
+			$("#address").val('');
+			$("#phone").val('');
+			$("#subject").val('');
+			$("#comment").val('');
+		});
+        $('.owl-carousel').owlCarousel({
+        	loop:true,
+        	margin:10,
+        	nav:true,
+        	autoplay:true,
+        	autoplayTimeout:4000,
+        	responsive:{
+        		0:{
+        			items:1
+        		},
+        		768:{
+        			items:2
+        		},
+        		1000:{
+        			items:3
+        		}
+        	}
+        })
+    });
+</script>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bui Xuan Xep</title>
+	<link rel="stylesheet" href="test.css">
+	<script src="../thuvienjQuery/jquery-3.5.1.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
+	<link href="../AOS/aos.css" rel="stylesheet">
+	<script src="../AOS/aos.js"></script>
+	<script>
+	$(function(){
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) $(".lentop").fadeIn();
+				else $(".lentop").fadeOut();
+			});
+			$(".lentop").click(function () {
+				$("body,html").animate({scrollTop: 0},"slow");
+			});
+		});
+</script>
+</head>
+<body>
+	<header>
+		<div class="container-fluid" style="box-shadow: 2px 2px 2px 1px #ededed">
+			<div class="container">
+				<div class="row" style="line-height: 60px;">		
+					<div class="col-lg-2">
+						<div class="logo">
+							<img src="../anh/logoAnimal.png" alt="">
+							<span>ANIMALS</span>
+						</div>
+							<label for="check" class="checkbtn">
+								<i class="fas fa-bars"></i>
+							</label></div>
+					<div class="col-lg-7">
+						<nav>						
+							<ul class="menu1">
+								<li class="limenu1"><a href="">HOME</a></li>
+								<li class="limenu1"><a href="">RARE ANIMALS</a></li>
+								<li class="limenu1"><a href="">SERVICES</a></li>
+								<li class="limenu1"><a href="">BLOG</a></li>
+								<li class="limenu1"><a href="">GALLERY</a></li>
+								<li class="limenu1"><a href="">CONTACT US</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-3">
+						<div class="quote" align="center">
+							<span id="nutquote" style="font-weight: bold;">GET A QUOTE<i class="fas fa-arrow-right" style="margin-left: 5px"></i></span>
+						</div>		
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+				<div class="row hang2">
+					<div class="col-lg-3 dong2">
+						<div class="iconmap"><i class="fas fa-map-marker-alt" style="color:#fed501;font-size: 30px"></i></div>
+						<div class="textmap">
+							<b>34 STEUBEN ST,NY,USA</b>
+							<p>Office address</p>
+						</div>
+					</div>
+					<div class="col-lg-3 dong2">
+						<div class="iconmap"><i class="fas fa-clock" style="color:#fed501;font-size: 30px"></i></div>
+						<div class="textmap">
+							<b>MON - SAT:7:00-18:00</b>
+							<p>Support 24/7</p>
+						</div>
+					</div>
+					<div class="col-lg-3 dong2">
+						<div class="iconmap"><i class="fas fa-phone-alt" style="color:#fed501;font-size: 30px"></i></div>
+						<div class="textmap">
+							<b>(205)-590-1845</b>
+							<p>Give us a call</p>
+						</div>
+					</div>
+					<div class="col-lg-3 dong3">
+						<div class="ngonngu">
+							<div class="co">
+								<img src="../anh/coAnh.png" style="width: 100%;height: 100%" alt="">
+							</div>
+							<b>ENG<i class="fas fa-angle-down" style="margin-left: 5px;font-size: 20px"></i></b>
+						</div>
+						<div class="tui">
+							<i class="fa fa-shopping-bag" style="font-size: 22px" aria-hidden="true"></i>
+							<div class="so0">0</div>
+						</div>
+						<div class="timkiem">
+							<i class="fas fa-search" style="font-size: 25px"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner slidedv">
+				<div class="carousel-item active " >
+					<img src="../anh/bao.jpg" height="350px"  class="d-block w-100" alt="...">
+					
+				</div>
+				<div class="carousel-item">
+					<img src="../anh/conho.jpg" height="350px" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="../anh/tegiac.jpg" height="350px" class="d-block w-100" alt="...">
+				</div>
+				<div class="textdvqh">
+					<h3>PROTECT OF WILD ANIMALS</h3>
+					<p>We need to protect them and prevent them from being hunted</p>
+					<span id="nutquote" style="font-weight: bold;">VIEW SERVICES<i class="fas fa-arrow-right" style="margin-left: 5px"></i></span>
+					<span id="nutquote" style="font-weight: bold;background-color: black;margin-left: 20px">GET A QUOTE<i class="fas fa-arrow-right" style="margin-left: 5px;"></i></span>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</a>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="videobv"><iframe style="margin-top: 50px " width="70%"  height="230px" src="../anh/Endangered Animal Species - Animals for Kids - Educational Video.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					
+				</div>
+				<div class="col-lg-7">
+					<div class="textvideo">
+						<h4>About</h4>
+						<h3>VIDEO PROTECT ANIMALS </h3>
+						<p>Wildlife conservation is the practice of protecting wildlife and their habitats. The goal of this is to ensure that the natural world is protected to protect future generations and to help humanity realize the importance of wildlife and the wild environment to humans and different species on this planet.</p>
+						<div >
+							OUT SERVICES<i class="fas fa-arrow-right" style="margin-left: 5px"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid service">
+		<div class="container servicecon">
+			<div class="row">
+				<div class="col-lg-12 ser">
+					Role
+				</div>
+				<div class="col-lg-4 key">
+					THE ROLE OF ANIMAL WITH HUMANS
+				</div>
+				<div class="col-lg-8 viewall">
+					<a  href="">VIEW ALL SERVICES</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="dichvu">
+						<i class="fas fa-paw dauchan"></i>
+						<div class="textdichvu">
+							<h4>Biodiversity</h4>
+							<p>All living things are part of a complex, well-balanced network called the biosphere</p>
+							<span><a href="">LEARN MORE<i class="fas fa-arrow-right" style="margin-left: 5px"></i></a></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="dichvu">
+						<i class="fas fa-paw dauchan"></i>
+						<div class="textdichvu">
+							<h4>Biodiversity</h4>
+							<p>All living things are part of a complex, well-balanced network called the biosphere</p>
+							<span><a href="">LEARN MORE<i class="fas fa-arrow-right" style="margin-left: 5px"></i></a></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="dichvu">
+						<i class="fas fa-paw dauchan"></i>
+						<div class="textdichvu">
+							<h4>Biodiversity</h4>
+							<p>All living things are part of a complex, well-balanced network called the biosphere</p>
+							<span><a href="">LEARN MORE<i class="fas fa-arrow-right" style="margin-left: 5px"></i></a></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="dichvu">
+						<i class="fas fa-paw dauchan"></i>
+						<div class="textdichvu">
+							<h4>Biodiversity</h4>
+							<p>All living things are part of a complex, well-balanced network called the biosphere</p>
+							<span><a href="">LEARN MORE<i class="fas fa-arrow-right" style="margin-left: 5px"></i></a></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="dichvu">
+						<i class="fas fa-paw dauchan"></i>
+						<div class="textdichvu">
+							<h4>Biodiversity</h4>
+							<p>All living things are part of a complex, well-balanced network called the biosphere</p>
+							<span><a href="">LEARN MORE<i class="fas fa-arrow-right" style="margin-left: 5px"></i></a></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="dichvu">
+						<i class="fas fa-paw dauchan"></i>
+						<div class="textdichvu">
+							<h4>Biodiversity</h4>
+							<p>All living things are part of a complex, well-balanced network called the biosphere</p>
+							<span><a href="">LEARN MORE<i class="fas fa-arrow-right" style="margin-left: 5px"></i></a></span>
+						</div>
+					</div>
+				</div>	
+			</div>
+				
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container protect">
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Cooperate with the animal protection team</p>
+					<h3>Protect them from extinction</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="see">
+						Prevent various types of natural disasters, maintain ecological services important to the life and socio-economic development of local, national and international communities.
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<a href="" class="seemore">SEE MORE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid extinct">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 war">
+					<p>WARNING !</p>
+					<h3>List of the most endangered species about to go extinct</h3>
+				</div>
+				<div class="col-lg-5 menulist">
+					<ul>
+						<li>ALL</li>
+						<li>ANIMAL CLASS</li>
+						<li>BIRD CLASS</li>
+						<li>REPTILE CLASS</li>
+						<li>FISH CLASS</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row cuoi">
+					<div class="col-lg-3">
+					<div class="logofooter">
+						<img class="logo" src="../anh/logoAnimal.png" alt="">
+						<span style="color: white;">ANIMALS</span>
+					</div>
+					<div class="textfooter">
+						Duis convaillis,tellus non dapibus ultric-ies, mauris est tincidunt elit, ut sagittis magna ipsum et odio.Aeonean pharetra,justo at ullamcorper lobortist.
+					</div>
+					<div class="icontact">
+						<i style="color: #fed501;" class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-invision"></i>
+						<i class="fab fa-pinterest-p"></i>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="titlefooter">
+						<span style="border-bottom: 2px solid #fed501;">QUICK</span>
+						<span>LINK</span>
+					</div>
+					<nav class="menufooter">
+						<ul>
+							<li><a href="">HOME</a></li>
+							<li><a href="">RARE ANIMALS</a></li>
+							<li><a href="">SERVICES</a></li>
+							<li><a href="">COMPANY NEWS</a></li>
+						</ul>
+						<ul>
+							<li><a href="">BLOG</a></li>
+							<li><a href="">PROJECT</a></li>
+							<li><a href="">CONTACT US</a></li>
+							<li><a href="">SHOP</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-lg-3">
+					<div class="titlefooter">
+						<span style="border-bottom: 2px solid #fed501;">CONTACT</span>
+						<span>INFOR</span>
+					</div>
+					<div class="iconfooter">
+						<ul>
+							<li><a href=""><i class="fas fa-map-marker-alt"></i>34 Steuben St,Brooklyn,NY 11205</a></li>
+							<li><a href=""><i class="fas fa-clock"></i>Mon - Sat:7:00-18:00</a></li>
+							<li><a href=""><i class="fas fa-phone-alt"></i>(205)-590-1845</a></li>
+							<li><a href=""><i class="fas fa-envelope"></i>buixuanxep@gmail.com</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="titlefooter">
+						<span style="border-bottom: 2px solid #fed501;">GALLERY</span>
+					</div>
+					<div class="gallery">
+						<div class="anh1"><img class="anh1con" src="../anh/bao.jpg" alt=""></div>
+						<div class="anh1"><img class="anh1con" src="../anh/linhduong.jpg" alt=""></div>
+						<div class="anh1"><img class="anh1con" src="../anh/nguavan.jpg" alt=""></div>
+						<div class="anh1"><img class="anh1con" src="../anh/ran.jpg" alt=""></div>
+						<div class="anh1"><img class="anh1con" src="../anh/soi.jpg" alt=""></div>
+						<div class="anh1"><img class="anh1con" src="../anh/sutu.jpg" alt=""></div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="row copy">
+				<div class="col-lg-12" align="center" style="color: #c5c5c5">
+					Copyright ⓒ 2021 Designed by AuThemes.All rights reserved
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class='lentop'>
+		<div>
+			<img src='../anh/top.png'>
+		</div>
+	</div>
+</body>
+</html>
